@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05BFF9CA25A8C2B600F99E27 /* WeldLearnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9C925A8C2B600F99E27 /* WeldLearnApp.swift */; };
+		05BFF9CC25A8C2B600F99E27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9CB25A8C2B600F99E27 /* ContentView.swift */; };
+		05BFF9CE25A8C2B800F99E27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BFF9CD25A8C2B800F99E27 /* Assets.xcassets */; };
+		05BFF9D125A8C2B800F99E27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BFF9D025A8C2B800F99E27 /* Preview Assets.xcassets */; };
+		05BFF9DB25A8C55F00F99E27 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9D925A8C55F00F99E27 /* Main.xcdatamodeld */; };
+		05BFF9DE25A8CA9B00F99E27 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9DD25A8CA9B00F99E27 /* DataController.swift */; };
+		05BFF9E425A904DC00F99E27 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BFF9E325A904DC00F99E27 /* CloudKit.framework */; };
+		05BFF9E725A9065400F99E27 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9E625A9065400F99E27 /* HomeView.swift */; };
+		05BFF9EA25A9078E00F99E27 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9E925A9078E00F99E27 /* ProjectsView.swift */; };
+		05BFF9F025A9175E00F99E27 /* Item-CoreData-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9EF25A9175E00F99E27 /* Item-CoreData-Helper.swift */; };
+		05BFF9F325A919A200F99E27 /* Project-CoreData-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9F225A919A200F99E27 /* Project-CoreData-Helper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05BFF9C625A8C2B600F99E27 /* WeldLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeldLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BFF9C925A8C2B600F99E27 /* WeldLearnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeldLearnApp.swift; sourceTree = "<group>"; };
+		05BFF9CB25A8C2B600F99E27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		05BFF9CD25A8C2B800F99E27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05BFF9D025A8C2B800F99E27 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		05BFF9D225A8C2B800F99E27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05BFF9DA25A8C55F00F99E27 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		05BFF9DD25A8CA9B00F99E27 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		05BFF9E025A904A300F99E27 /* WeldLearn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeldLearn.entitlements; sourceTree = "<group>"; };
+		05BFF9E325A904DC00F99E27 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		05BFF9E625A9065400F99E27 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		05BFF9E925A9078E00F99E27 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		05BFF9EF25A9175E00F99E27 /* Item-CoreData-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreData-Helper.swift"; sourceTree = "<group>"; };
+		05BFF9F225A919A200F99E27 /* Project-CoreData-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreData-Helper.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05BFF9C325A8C2B600F99E27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BFF9E425A904DC00F99E27 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05BFF9BD25A8C2B600F99E27 = {
+			isa = PBXGroup;
+			children = (
+				05BFF9C825A8C2B600F99E27 /* WeldLearn */,
+				05BFF9C725A8C2B600F99E27 /* Products */,
+				05BFF9E225A904DC00F99E27 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		05BFF9C725A8C2B600F99E27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05BFF9C625A8C2B600F99E27 /* WeldLearn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05BFF9C825A8C2B600F99E27 /* WeldLearn */ = {
+			isa = PBXGroup;
+			children = (
+				05BFF9EE25A9172400F99E27 /* Extensions */,
+				05BFF9E525A9063C00F99E27 /* Views */,
+				05BFF9E025A904A300F99E27 /* WeldLearn.entitlements */,
+				05BFF9C925A8C2B600F99E27 /* WeldLearnApp.swift */,
+				05BFF9CD25A8C2B800F99E27 /* Assets.xcassets */,
+				05BFF9D225A8C2B800F99E27 /* Info.plist */,
+				05BFF9CF25A8C2B800F99E27 /* Preview Content */,
+				05BFF9D925A8C55F00F99E27 /* Main.xcdatamodeld */,
+				05BFF9DD25A8CA9B00F99E27 /* DataController.swift */,
+			);
+			path = WeldLearn;
+			sourceTree = "<group>";
+		};
+		05BFF9CF25A8C2B800F99E27 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				05BFF9D025A8C2B800F99E27 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		05BFF9E225A904DC00F99E27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05BFF9E325A904DC00F99E27 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05BFF9E525A9063C00F99E27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				05BFF9E625A9065400F99E27 /* HomeView.swift */,
+				05BFF9CB25A8C2B600F99E27 /* ContentView.swift */,
+				05BFF9E925A9078E00F99E27 /* ProjectsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		05BFF9EE25A9172400F99E27 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				05BFF9EF25A9175E00F99E27 /* Item-CoreData-Helper.swift */,
+				05BFF9F225A919A200F99E27 /* Project-CoreData-Helper.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05BFF9C525A8C2B600F99E27 /* WeldLearn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05BFF9D525A8C2B800F99E27 /* Build configuration list for PBXNativeTarget "WeldLearn" */;
+			buildPhases = (
+				05BFF9C225A8C2B600F99E27 /* Sources */,
+				05BFF9C325A8C2B600F99E27 /* Frameworks */,
+				05BFF9C425A8C2B600F99E27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeldLearn;
+			productName = WeldLearn;
+			productReference = 05BFF9C625A8C2B600F99E27 /* WeldLearn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05BFF9BE25A8C2B600F99E27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					05BFF9C525A8C2B600F99E27 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 05BFF9C125A8C2B600F99E27 /* Build configuration list for PBXProject "WeldLearn" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05BFF9BD25A8C2B600F99E27;
+			productRefGroup = 05BFF9C725A8C2B600F99E27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05BFF9C525A8C2B600F99E27 /* WeldLearn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05BFF9C425A8C2B600F99E27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BFF9D125A8C2B800F99E27 /* Preview Assets.xcassets in Resources */,
+				05BFF9CE25A8C2B800F99E27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05BFF9C225A8C2B600F99E27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BFF9EA25A9078E00F99E27 /* ProjectsView.swift in Sources */,
+				05BFF9DB25A8C55F00F99E27 /* Main.xcdatamodeld in Sources */,
+				05BFF9DE25A8CA9B00F99E27 /* DataController.swift in Sources */,
+				05BFF9CC25A8C2B600F99E27 /* ContentView.swift in Sources */,
+				05BFF9F325A919A200F99E27 /* Project-CoreData-Helper.swift in Sources */,
+				05BFF9E725A9065400F99E27 /* HomeView.swift in Sources */,
+				05BFF9CA25A8C2B600F99E27 /* WeldLearnApp.swift in Sources */,
+				05BFF9F025A9175E00F99E27 /* Item-CoreData-Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		05BFF9D325A8C2B800F99E27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05BFF9D425A8C2B800F99E27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05BFF9D625A8C2B800F99E27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WeldLearn/WeldLearn.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WeldLearn/Preview Content\"";
+				DEVELOPMENT_TEAM = 6C7TWR6BW7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WeldLearn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.semajttocs-icloud.WeldLearn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05BFF9D725A8C2B800F99E27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WeldLearn/WeldLearn.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WeldLearn/Preview Content\"";
+				DEVELOPMENT_TEAM = 6C7TWR6BW7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WeldLearn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.semajttocs-icloud.WeldLearn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05BFF9C125A8C2B600F99E27 /* Build configuration list for PBXProject "WeldLearn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BFF9D325A8C2B800F99E27 /* Debug */,
+				05BFF9D425A8C2B800F99E27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05BFF9D525A8C2B800F99E27 /* Build configuration list for PBXNativeTarget "WeldLearn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BFF9D625A8C2B800F99E27 /* Debug */,
+				05BFF9D725A8C2B800F99E27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		05BFF9D925A8C55F00F99E27 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				05BFF9DA25A8C55F00F99E27 /* Main.xcdatamodel */,
+			);
+			currentVersion = 05BFF9DA25A8C55F00F99E27 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 05BFF9BE25A8C2B600F99E27 /* Project object */;
+}
