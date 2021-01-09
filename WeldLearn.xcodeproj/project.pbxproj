@@ -18,6 +18,8 @@
 		05BFF9EA25A9078E00F99E27 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9E925A9078E00F99E27 /* ProjectsView.swift */; };
 		05BFF9F025A9175E00F99E27 /* Item-CoreData-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9EF25A9175E00F99E27 /* Item-CoreData-Helper.swift */; };
 		05BFF9F325A919A200F99E27 /* Project-CoreData-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9F225A919A200F99E27 /* Project-CoreData-Helper.swift */; };
+		05BFF9F725A92CC300F99E27 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9F625A92CC300F99E27 /* EditItemView.swift */; };
+		05BFF9FA25A934E500F99E27 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9F925A934E500F99E27 /* ItemRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		05BFF9E925A9078E00F99E27 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		05BFF9EF25A9175E00F99E27 /* Item-CoreData-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreData-Helper.swift"; sourceTree = "<group>"; };
 		05BFF9F225A919A200F99E27 /* Project-CoreData-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreData-Helper.swift"; sourceTree = "<group>"; };
+		05BFF9F625A92CC300F99E27 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
+		05BFF9F925A934E500F99E27 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				05BFF9E625A9065400F99E27 /* HomeView.swift */,
 				05BFF9CB25A8C2B600F99E27 /* ContentView.swift */,
 				05BFF9E925A9078E00F99E27 /* ProjectsView.swift */,
+				05BFF9F625A92CC300F99E27 /* EditItemView.swift */,
+				05BFF9F925A934E500F99E27 /* ItemRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,10 +196,12 @@
 				05BFF9DB25A8C55F00F99E27 /* Main.xcdatamodeld in Sources */,
 				05BFF9DE25A8CA9B00F99E27 /* DataController.swift in Sources */,
 				05BFF9CC25A8C2B600F99E27 /* ContentView.swift in Sources */,
+				05BFF9FA25A934E500F99E27 /* ItemRowView.swift in Sources */,
 				05BFF9F325A919A200F99E27 /* Project-CoreData-Helper.swift in Sources */,
 				05BFF9E725A9065400F99E27 /* HomeView.swift in Sources */,
 				05BFF9CA25A8C2B600F99E27 /* WeldLearnApp.swift in Sources */,
 				05BFF9F025A9175E00F99E27 /* Item-CoreData-Helper.swift in Sources */,
+				05BFF9F725A92CC300F99E27 /* EditItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
