@@ -23,6 +23,7 @@
 		05BFFA0225AA0CBA00F99E27 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFA0125AA0CBA00F99E27 /* Binding-OnChange.swift */; };
 		05BFFA0525AA0EDB00F99E27 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFA0425AA0EDB00F99E27 /* ProjectHeaderView.swift */; };
 		05BFFA0825AA134000F99E27 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BFFA0725AA134000F99E27 /* Colors.xcassets */; };
+		05BFFA0B25AA63DE00F99E27 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFA0A25AA63DE00F99E27 /* EditProjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		05BFFA0125AA0CBA00F99E27 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		05BFFA0425AA0EDB00F99E27 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		05BFFA0725AA134000F99E27 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = Views/Colors.xcassets; sourceTree = "<group>"; };
+		05BFFA0A25AA63DE00F99E27 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				05BFF9F625A92CC300F99E27 /* EditItemView.swift */,
 				05BFF9F925A934E500F99E27 /* ItemRowView.swift */,
 				05BFFA0425AA0EDB00F99E27 /* ProjectHeaderView.swift */,
+				05BFFA0A25AA63DE00F99E27 /* EditProjectView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				05BFFA0525AA0EDB00F99E27 /* ProjectHeaderView.swift in Sources */,
 				05BFF9DB25A8C55F00F99E27 /* Main.xcdatamodeld in Sources */,
 				05BFF9DE25A8CA9B00F99E27 /* DataController.swift in Sources */,
+				05BFFA0B25AA63DE00F99E27 /* EditProjectView.swift in Sources */,
 				05BFF9CC25A8C2B600F99E27 /* ContentView.swift in Sources */,
 				05BFF9FA25A934E500F99E27 /* ItemRowView.swift in Sources */,
 				05BFF9F325A919A200F99E27 /* Project-CoreData-Helper.swift in Sources */,
