@@ -23,8 +23,11 @@ extension Project {
     }
 
     var projectItems: [Item] {
-        let itemsArray = items?.allObjects as? [Item] ?? []
-        return itemsArray.sorted { first, second in
+        items?.allObjects as? [Item] ?? []
+    }
+
+    var projectItemsDefaultSorted: [Item] {
+        projectItems.sorted { first, second in
             if first.completed == false {
                 if second.completed == true {
                     return true
@@ -64,5 +67,9 @@ extension Project {
 
         return project
     }
-
+    func projectItems<Value: Comparable>(sortedBy keyPath: KeyPath<Item, Value>) -> [Item] {
+        projectItems.sorted {
+            $0[keyPath: keyPath] < $1[keyPath: keyPath]
+        }
+    }
 }

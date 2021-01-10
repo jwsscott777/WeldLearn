@@ -14,6 +14,10 @@ struct ProjectsView: View {
     @EnvironmentObject var dataController: DataController
     @Environment(\.managedObjectContext) var managedobjectContext
 
+    @State private var showingSortOrder = false
+
+    @State private var sortOrder = Item.SortOrder.optimized
+
     let showClosedProjects: Bool
     let projects: FetchRequest<Project>
 
@@ -27,11 +31,17 @@ struct ProjectsView: View {
 
     var body: some View {
         NavigationView {
+            Group {
+                if projects.wrappedValue.isEmpty {
+                    Text("Nothing here right now")
+                        .foregroundColor(.secondary)
+                } else {
+
             List {
                 ForEach(projects.wrappedValue) { project in
                     Section(header: ProjectHeaderView(project: project)) {
-                        ForEach(project.projectItems) { item in
-                           ItemRowView(item: item)
+                        ForEach(items(for: project)) { item in
+                            ItemRowView(project: project, item: item)
                         }
                         .onDelete { offsets in
                             let allItems = project.projectItems
@@ -58,8 +68,13 @@ struct ProjectsView: View {
                 }
             }
             .listStyle(InsetGroupedListStyle())
+        }
+    }
+
+
             .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
             .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
                 if showClosedProjects == false {
                     Button {
                         withAnimation {
@@ -72,7 +87,36 @@ struct ProjectsView: View {
                         Label("Add Project", systemImage: "plus")
                     }
                 }
+                }
+
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        showingSortOrder.toggle()
+                    } label: {
+                        Label("Sort", systemImage: "arrow.up.arrow.down")
+                    }
+                }
             }
+            .actionSheet(isPresented: $showingSortOrder) {
+                ActionSheet(title: Text("Sort items"), message: nil, buttons: [
+                    .default(Text("Optimized")) { sortOrder = .optimized },
+                    .default(Text("Creation Date")) { sortOrder = .creationDate },
+                    .default(Text("Title")) { sortOrder = .title }
+                ])
+            }
+            SelectSomethingView()
+        }
+    }
+   
+
+    func items(for project: Project) -> [Item] {
+        switch sortOrder {
+        case .title:
+            return project.projectItems(sortedBy: \Item.itemTitle)
+        case .creationDate:
+            return project.projectItems(sortedBy: \Item.itemCreationDate)
+        case .optimized:
+            return project.projectItemsDefaultSorted
         }
     }
 }
