@@ -30,6 +30,7 @@
 		05BFFA1825ABB2AF00F99E27 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 05BFFA1725ABB2AF00F99E27 /* Awards.json */; };
 		05BFFA1B25ABB37700F99E27 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFA1A25ABB37700F99E27 /* Award.swift */; };
 		05BFFA1E25ABB4ED00F99E27 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFA1D25ABB4ED00F99E27 /* AwardsView.swift */; };
+		05BFFA2125ABCB8700F99E27 /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFA2025ABCB8700F99E27 /* Color-Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		05BFFA1725ABB2AF00F99E27 /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
 		05BFFA1A25ABB37700F99E27 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		05BFFA1D25ABB4ED00F99E27 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
+		05BFFA2025ABCB8700F99E27 /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				05BFFA0D25AA9ACB00F99E27 /* Sequence-Sorting.swift */,
 				05BFFA1425ABAFF600F99E27 /* Bundle-Decodable.swift */,
 				05BFFA1A25ABB37700F99E27 /* Award.swift */,
+				05BFFA2025ABCB8700F99E27 /* Color-Additions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				05BFFA1E25ABB4ED00F99E27 /* AwardsView.swift in Sources */,
 				05BFF9DB25A8C55F00F99E27 /* Main.xcdatamodeld in Sources */,
 				05BFF9DE25A8CA9B00F99E27 /* DataController.swift in Sources */,
+				05BFFA2125ABCB8700F99E27 /* Color-Additions.swift in Sources */,
 				05BFFA0B25AA63DE00F99E27 /* EditProjectView.swift in Sources */,
 				05BFF9CC25A8C2B600F99E27 /* ContentView.swift in Sources */,
 				05BFFA1125AB5D4F00F99E27 /* SelectSomethingView.swift in Sources */,

@@ -1,0 +1,13 @@
+//
+//  Color-Additions.swift
+//  WeldLearn
+//
+//  Created by JWSScott777 on 1/10/21.
+//
+
+import SwiftUI
+
+extension Color {
+    static let systemGroupedBackground = Color(UIColor.systemGroupedBackground)
+    static let secondarySystemGroupedBackground = Color(UIColor.secondarySystemGroupedBackground)
+}
