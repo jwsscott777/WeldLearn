@@ -30,7 +30,7 @@
 
 "More to see" = "Más para explorar";
 
-"%@, %lld items, %g% complete" = "%@, %lld articulos, %g% complete";
+"%@, %lld items, %g%% complete" = "%@, %lld articulos, %g%% complete";
 
 
 
