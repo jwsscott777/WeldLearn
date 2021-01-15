@@ -106,16 +106,14 @@
 		05BFF9C825A8C2B600F99E27 /* WeldLearn */ = {
 			isa = PBXGroup;
 			children = (
+				05BFFA4325B2576A00F99E27 /* Configuration */,
 				05BFFA3725AE884B00F99E27 /* Awards.json */,
 				05BFFA0725AA134000F99E27 /* Colors.xcassets */,
 				05BFF9EE25A9172400F99E27 /* Extensions */,
 				05BFF9E525A9063C00F99E27 /* Views */,
-				05BFF9E025A904A300F99E27 /* WeldLearn.entitlements */,
 				05BFF9C925A8C2B600F99E27 /* WeldLearnApp.swift */,
 				05BFF9CD25A8C2B800F99E27 /* Assets.xcassets */,
-				05BFF9D225A8C2B800F99E27 /* Info.plist */,
 				05BFF9CF25A8C2B800F99E27 /* Preview Content */,
-				05BFF9D925A8C55F00F99E27 /* Main.xcdatamodeld */,
 				05BFF9DD25A8CA9B00F99E27 /* DataController.swift */,
 				05BFFA2C25AE779600F99E27 /* Localizable.strings */,
 				05BFFA3125AE825500F99E27 /* Localizable.stringsdict */,
@@ -169,6 +167,16 @@
 				05BFFA2025ABCB8700F99E27 /* Color-Additions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		05BFFA4325B2576A00F99E27 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				05BFF9E025A904A300F99E27 /* WeldLearn.entitlements */,
+				05BFF9D925A8C55F00F99E27 /* Main.xcdatamodeld */,
+				05BFF9D225A8C2B800F99E27 /* Info.plist */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,12 +453,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WeldLearn/WeldLearn.entitlements;
+				CODE_SIGN_ENTITLEMENTS = WeldLearn/Configuration/WeldLearn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WeldLearn/Preview Content\"";
 				DEVELOPMENT_TEAM = 6C7TWR6BW7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = WeldLearn/Info.plist;
+				INFOPLIST_FILE = WeldLearn/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,12 +476,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WeldLearn/WeldLearn.entitlements;
+				CODE_SIGN_ENTITLEMENTS = WeldLearn/Configuration/WeldLearn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WeldLearn/Preview Content\"";
 				DEVELOPMENT_TEAM = 6C7TWR6BW7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = WeldLearn/Info.plist;
+				INFOPLIST_FILE = WeldLearn/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -8,9 +8,15 @@
 import CoreData
 import SwiftUI
 
+/// An environment singleton responsible for managing our Core Data stack, including handling saving,
+/// counting fetch requests, tracking awards and dealing with sample data.
 class DataController: ObservableObject {
+
+/// The lone CloudKit container to store all data.
     let container: NSPersistentCloudKitContainer
 
+    /// Initializes a data controller, Defaults to permanent storage
+    /// - Parameter inMemory: Whether to store temp or not.
     init(inMemory: Bool = false) {
         container = NSPersistentCloudKitContainer(name: "Main")
 
@@ -86,11 +92,13 @@ class DataController: ObservableObject {
     func hasEarned(award: Award) -> Bool {
         switch award.criterion {
         case "items":
+            // returns true if they added a certain number of items
             let fetchRequest: NSFetchRequest<Item> = NSFetchRequest(entityName: "Item")
             let awardCount = count(for: fetchRequest)
             return awardCount >= award.value
 
         case "complete":
+            // returns true if they completed some items
             let fetchRequest: NSFetchRequest<Item> = NSFetchRequest(entityName: "Item")
             fetchRequest.predicate = NSPredicate(format: "completed = true")
             let awardCount = count(for: fetchRequest)
