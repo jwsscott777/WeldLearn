@@ -5,13 +5,16 @@
 //  Created by JWSScott777 on 1/8/21.
 //
 
-import Foundation
+import SwiftUI
 
 extension Project {
-    static let colors = ["Pink", "Purple", "Red", "Orange", "Gold", "Green", "Teal", "Light Blue", "Dark Blue", "Midnight", "Dark Gray", "Gray"]
+    static let colors = ["Pink", "Purple", "Red", "Orange", "Gold",
+                         "Green", "Teal", "Light Blue", "Dark Blue",
+                         "Midnight", "Dark Gray", "Gray"]
 
     var projectTitle: String {
-        title ?? NSLocalizedString("New Project", comment: "Create a new project") 
+        title ?? NSLocalizedString(
+        "New Project", comment: "Create a new project")
     }
 
     var projectDetail: String {
@@ -53,6 +56,11 @@ extension Project {
             let completedItems = originalItems.filter(\.completed)
             return Double(completedItems.count) / Double(originalItems.count)
 
+    }
+
+    var label: LocalizedStringKey {
+        LocalizedStringKey(
+            "\(projectTitle), \(projectItems.count) items, \(completionAmount * 100, specifier: "%g")% complete")
     }
 
     static var example: Project {

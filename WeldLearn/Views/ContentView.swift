@@ -24,7 +24,6 @@ struct ContentView: View {
                     Image(systemName: "list.bullet")
                     Text("Open")
                 }
-            
             ProjectsView(showClosedProjects: true)
                 .tag(ProjectsView.closedTag)
                 .tabItem {
@@ -38,7 +37,6 @@ struct ContentView: View {
                     Text("Awards")
                 }
         }
-        
     }
 }
 

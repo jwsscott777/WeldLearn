@@ -33,16 +33,15 @@ extension Bundle {
 
             fatalError(
 
-                "Could not decode \(file) from bundle missing key '\(key.stringValue)'- \(context.debugDescription)")
+                "Could not decode \(file) missing key '\(key.stringValue)'- \(context.debugDescription)")
         } catch DecodingError.typeMismatch(_, let context) {
-            fatalError("Failed to decode \(file) from bundle because of a mismatch- \(context.debugDescription)")
+            fatalError("Failed to decode \(file) mismatch- \(context.debugDescription)")
         } catch DecodingError.valueNotFound(let type, let context) {
-            fatalError("Failed to decode \(file) because of missing \(type) value- \(context.debugDescription)")
+            fatalError("Failed to decode \(file) missing \(type) value- \(context.debugDescription)")
         } catch DecodingError.dataCorrupted(_) {
-            fatalError("Failed to decode \(file) because it is not valid json")
+            fatalError("Failed to decode \(file) not valid json")
         } catch {
             fatalError("Error decoding \(file) from bundle: \(error.localizedDescription)")
         }
     }
 }
-
