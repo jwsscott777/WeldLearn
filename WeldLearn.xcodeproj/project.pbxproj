@@ -35,7 +35,21 @@
 		05BFFA3525AE884B00F99E27 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 05BFFA3725AE884B00F99E27 /* Awards.json */; };
 		05BFFA3C25B1380C00F99E27 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFA3B25B1380C00F99E27 /* ItemListView.swift */; };
 		05BFFA3F25B1399600F99E27 /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFA3E25B1399600F99E27 /* ProjectSummaryView.swift */; };
+		05BFFA4D25B25C8900F99E27 /* WeldLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFA4C25B25C8900F99E27 /* WeldLearnTests.swift */; };
+		05BFFA5725B2624500F99E27 /* AssetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFA5625B2624500F99E27 /* AssetTest.swift */; };
+		05BFFAAE25BCB2B000F99E27 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFAAD25BCB2B000F99E27 /* ProjectTests.swift */; };
+		05BFFAB225BCBB9900F99E27 /* AwardTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFAB125BCBB9900F99E27 /* AwardTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05BFFA4F25B25C8900F99E27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05BFF9BE25A8C2B600F99E27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05BFF9C525A8C2B600F99E27;
+			remoteInfo = WeldLearn;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		05BFF9C625A8C2B600F99E27 /* WeldLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeldLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +86,12 @@
 		05BFFA3925AE885100F99E27 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Awards.json"; sourceTree = "<group>"; };
 		05BFFA3B25B1380C00F99E27 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		05BFFA3E25B1399600F99E27 /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
+		05BFFA4A25B25C8900F99E27 /* WeldLearnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeldLearnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BFFA4C25B25C8900F99E27 /* WeldLearnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeldLearnTests.swift; sourceTree = "<group>"; };
+		05BFFA4E25B25C8900F99E27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05BFFA5625B2624500F99E27 /* AssetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTest.swift; sourceTree = "<group>"; };
+		05BFFAAD25BCB2B000F99E27 /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
+		05BFFAB125BCBB9900F99E27 /* AwardTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05BFFA4725B25C8900F99E27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				05BFF9C825A8C2B600F99E27 /* WeldLearn */,
+				05BFFA4B25B25C8900F99E27 /* WeldLearnTests */,
 				05BFF9C725A8C2B600F99E27 /* Products */,
 				05BFF9E225A904DC00F99E27 /* Frameworks */,
 			);
@@ -99,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				05BFF9C625A8C2B600F99E27 /* WeldLearn.app */,
+				05BFFA4A25B25C8900F99E27 /* WeldLearnTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,6 +208,18 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
+		05BFFA4B25B25C8900F99E27 /* WeldLearnTests */ = {
+			isa = PBXGroup;
+			children = (
+				05BFFA4C25B25C8900F99E27 /* WeldLearnTests.swift */,
+				05BFFA5625B2624500F99E27 /* AssetTest.swift */,
+				05BFFA4E25B25C8900F99E27 /* Info.plist */,
+				05BFFAAD25BCB2B000F99E27 /* ProjectTests.swift */,
+				05BFFAB125BCBB9900F99E27 /* AwardTest.swift */,
+			);
+			path = WeldLearnTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -200,6 +241,24 @@
 			productReference = 05BFF9C625A8C2B600F99E27 /* WeldLearn.app */;
 			productType = "com.apple.product-type.application";
 		};
+		05BFFA4925B25C8900F99E27 /* WeldLearnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05BFFA5125B25C8900F99E27 /* Build configuration list for PBXNativeTarget "WeldLearnTests" */;
+			buildPhases = (
+				05BFFA4625B25C8900F99E27 /* Sources */,
+				05BFFA4725B25C8900F99E27 /* Frameworks */,
+				05BFFA4825B25C8900F99E27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05BFFA5025B25C8900F99E27 /* PBXTargetDependency */,
+			);
+			name = WeldLearnTests;
+			productName = WeldLearnTests;
+			productReference = 05BFFA4A25B25C8900F99E27 /* WeldLearnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,6 +270,10 @@
 				TargetAttributes = {
 					05BFF9C525A8C2B600F99E27 = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					05BFFA4925B25C8900F99E27 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 05BFF9C525A8C2B600F99E27;
 					};
 				};
 			};
@@ -229,6 +292,7 @@
 			projectRoot = "";
 			targets = (
 				05BFF9C525A8C2B600F99E27 /* WeldLearn */,
+				05BFFA4925B25C8900F99E27 /* WeldLearnTests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,6 +308,13 @@
 				05BFF9D125A8C2B800F99E27 /* Preview Assets.xcassets in Resources */,
 				05BFF9CE25A8C2B800F99E27 /* Assets.xcassets in Resources */,
 				05BFFA2F25AE825500F99E27 /* Localizable.stringsdict in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BFFA4825B25C8900F99E27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +370,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05BFFA4625B25C8900F99E27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BFFA5725B2624500F99E27 /* AssetTest.swift in Sources */,
+				05BFFAB225BCBB9900F99E27 /* AwardTest.swift in Sources */,
+				05BFFA4D25B25C8900F99E27 /* WeldLearnTests.swift in Sources */,
+				05BFFAAE25BCB2B000F99E27 /* ProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05BFFA5025B25C8900F99E27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05BFF9C525A8C2B600F99E27 /* WeldLearn */;
+			targetProxy = 05BFFA4F25B25C8900F99E27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		05BFFA2C25AE779600F99E27 /* Localizable.strings */ = {
@@ -494,6 +584,46 @@
 			};
 			name = Release;
 		};
+		05BFFA5225B25C8900F99E27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C7TWR6BW7;
+				INFOPLIST_FILE = WeldLearnTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.semajttocs-icloud.WeldLearnTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeldLearn.app/WeldLearn";
+			};
+			name = Debug;
+		};
+		05BFFA5325B25C8900F99E27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C7TWR6BW7;
+				INFOPLIST_FILE = WeldLearnTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.semajttocs-icloud.WeldLearnTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeldLearn.app/WeldLearn";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -511,6 +641,15 @@
 			buildConfigurations = (
 				05BFF9D625A8C2B800F99E27 /* Debug */,
 				05BFF9D725A8C2B800F99E27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05BFFA5125B25C8900F99E27 /* Build configuration list for PBXNativeTarget "WeldLearnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BFFA5225B25C8900F99E27 /* Debug */,
+				05BFFA5325B25C8900F99E27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
