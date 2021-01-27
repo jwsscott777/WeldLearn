@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		057ECB9F25C2108C008ECEE9 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057ECB9E25C2108C008ECEE9 /* DevelopmentTests.swift */; };
 		05BFF9CA25A8C2B600F99E27 /* WeldLearnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9C925A8C2B600F99E27 /* WeldLearnApp.swift */; };
 		05BFF9CC25A8C2B600F99E27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9CB25A8C2B600F99E27 /* ContentView.swift */; };
 		05BFF9CE25A8C2B800F99E27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BFF9CD25A8C2B800F99E27 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		057ECB9E25C2108C008ECEE9 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 		05BFF9C625A8C2B600F99E27 /* WeldLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeldLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BFF9C925A8C2B600F99E27 /* WeldLearnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeldLearnApp.swift; sourceTree = "<group>"; };
 		05BFF9CB25A8C2B600F99E27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				05BFFA4E25B25C8900F99E27 /* Info.plist */,
 				05BFFAAD25BCB2B000F99E27 /* ProjectTests.swift */,
 				05BFFAB125BCBB9900F99E27 /* AwardTest.swift */,
+				057ECB9E25C2108C008ECEE9 /* DevelopmentTests.swift */,
 			);
 			path = WeldLearnTests;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				05BFFAB225BCBB9900F99E27 /* AwardTest.swift in Sources */,
 				05BFFA4D25B25C8900F99E27 /* WeldLearnTests.swift in Sources */,
 				05BFFAAE25BCB2B000F99E27 /* ProjectTests.swift in Sources */,
+				057ECB9F25C2108C008ECEE9 /* DevelopmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
