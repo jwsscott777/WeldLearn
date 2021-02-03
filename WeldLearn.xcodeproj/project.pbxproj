@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0555D3BD25CA1DC000D423F7 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0555D3BC25CA1DC000D423F7 /* ExtensionTests.swift */; };
+		0555D3C425CA26E400D423F7 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 0555D3C325CA26E400D423F7 /* DecodableDictionary.json */; };
+		0555D3CA25CA277300D423F7 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = 0555D3C925CA277300D423F7 /* DecodableString.json */; };
 		057ECB9F25C2108C008ECEE9 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057ECB9E25C2108C008ECEE9 /* DevelopmentTests.swift */; };
 		05BFF9CA25A8C2B600F99E27 /* WeldLearnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9C925A8C2B600F99E27 /* WeldLearnApp.swift */; };
 		05BFF9CC25A8C2B600F99E27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9CB25A8C2B600F99E27 /* ContentView.swift */; };
@@ -53,6 +56,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0555D3BC25CA1DC000D423F7 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
+		0555D3C325CA26E400D423F7 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
+		0555D3C925CA277300D423F7 /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
 		057ECB9E25C2108C008ECEE9 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 		05BFF9C625A8C2B600F99E27 /* WeldLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeldLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BFF9C925A8C2B600F99E27 /* WeldLearnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeldLearnApp.swift; sourceTree = "<group>"; };
@@ -115,6 +121,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0555D3C225CA269000D423F7 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				0555D3C325CA26E400D423F7 /* DecodableDictionary.json */,
+				0555D3C925CA277300D423F7 /* DecodableString.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
 		05BFF9BD25A8C2B600F99E27 = {
 			isa = PBXGroup;
 			children = (
@@ -213,12 +228,14 @@
 		05BFFA4B25B25C8900F99E27 /* WeldLearnTests */ = {
 			isa = PBXGroup;
 			children = (
+				0555D3C225CA269000D423F7 /* Fixtures */,
 				05BFFA4C25B25C8900F99E27 /* WeldLearnTests.swift */,
 				05BFFA5625B2624500F99E27 /* AssetTest.swift */,
 				05BFFA4E25B25C8900F99E27 /* Info.plist */,
 				05BFFAAD25BCB2B000F99E27 /* ProjectTests.swift */,
 				05BFFAB125BCBB9900F99E27 /* AwardTest.swift */,
 				057ECB9E25C2108C008ECEE9 /* DevelopmentTests.swift */,
+				0555D3BC25CA1DC000D423F7 /* ExtensionTests.swift */,
 			);
 			path = WeldLearnTests;
 			sourceTree = "<group>";
@@ -269,7 +286,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					05BFF9C525A8C2B600F99E27 = {
 						CreatedOnToolsVersion = 12.3;
@@ -318,6 +335,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0555D3CA25CA277300D423F7 /* DecodableString.json in Resources */,
+				0555D3C425CA26E400D423F7 /* DecodableDictionary.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +399,7 @@
 				05BFFA5725B2624500F99E27 /* AssetTest.swift in Sources */,
 				05BFFAB225BCBB9900F99E27 /* AwardTest.swift in Sources */,
 				05BFFA4D25B25C8900F99E27 /* WeldLearnTests.swift in Sources */,
+				0555D3BD25CA1DC000D423F7 /* ExtensionTests.swift in Sources */,
 				05BFFAAE25BCB2B000F99E27 /* ProjectTests.swift in Sources */,
 				057ECB9F25C2108C008ECEE9 /* DevelopmentTests.swift in Sources */,
 			);
@@ -430,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -491,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

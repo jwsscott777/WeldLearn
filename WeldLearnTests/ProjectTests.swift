@@ -29,8 +29,6 @@ class ProjectTests: BaseTestCase {
     func testDeletingProjectCascadeDeletesItems() throws {
         try dataController.createSampleData()
 
-
-
         let request = NSFetchRequest<Project>(entityName: "Project")
         let projects = try managedObjectContext.fetch(request)
 
