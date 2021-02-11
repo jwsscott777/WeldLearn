@@ -11,6 +11,7 @@
 		0555D3C425CA26E400D423F7 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 0555D3C325CA26E400D423F7 /* DecodableDictionary.json */; };
 		0555D3CA25CA277300D423F7 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = 0555D3C925CA277300D423F7 /* DecodableString.json */; };
 		057ECB9F25C2108C008ECEE9 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057ECB9E25C2108C008ECEE9 /* DevelopmentTests.swift */; };
+		05AE095425D4B83700AEF374 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AE095325D4B83600AEF374 /* PerformanceTests.swift */; };
 		05BFF9CA25A8C2B600F99E27 /* WeldLearnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9C925A8C2B600F99E27 /* WeldLearnApp.swift */; };
 		05BFF9CC25A8C2B600F99E27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9CB25A8C2B600F99E27 /* ContentView.swift */; };
 		05BFF9CE25A8C2B800F99E27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BFF9CD25A8C2B800F99E27 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		0555D3C325CA26E400D423F7 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
 		0555D3C925CA277300D423F7 /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
 		057ECB9E25C2108C008ECEE9 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
+		05AE095325D4B83600AEF374 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
 		05BFF9C625A8C2B600F99E27 /* WeldLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeldLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BFF9C925A8C2B600F99E27 /* WeldLearnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeldLearnApp.swift; sourceTree = "<group>"; };
 		05BFF9CB25A8C2B600F99E27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				05BFFAB125BCBB9900F99E27 /* AwardTest.swift */,
 				057ECB9E25C2108C008ECEE9 /* DevelopmentTests.swift */,
 				0555D3BC25CA1DC000D423F7 /* ExtensionTests.swift */,
+				05AE095325D4B83600AEF374 /* PerformanceTests.swift */,
 			);
 			path = WeldLearnTests;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05AE095425D4B83700AEF374 /* PerformanceTests.swift in Sources */,
 				05BFFA5725B2624500F99E27 /* AssetTest.swift in Sources */,
 				05BFFAB225BCBB9900F99E27 /* AwardTest.swift in Sources */,
 				05BFFA4D25B25C8900F99E27 /* WeldLearnTests.swift in Sources */,
