@@ -80,4 +80,15 @@ extension Project {
             $0[keyPath: keyPath] < $1[keyPath: keyPath]
         }
     }
+
+    func projectItems(using sortOrder: Item.SortOrder) -> [Item] {
+        switch sortOrder {
+        case .title:
+            return projectItems(sortedBy: \Item.itemTitle)
+       case .creationDate:
+            return projectItems(sortedBy: \Item.itemCreationDate)
+        case .optimized:
+            return projectItemsDefaultSorted
+       }
+    }
 }

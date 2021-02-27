@@ -50,7 +50,6 @@ struct EditItemView: View {
         .onDisappear(perform: dataController.save)
 
     }
-
     func update() {
         item.project?.objectWillChange.send()
 
