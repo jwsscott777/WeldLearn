@@ -34,8 +34,12 @@ struct EditProjectView: View {
         Form {
             // sec 1
             Section(header: Text("Basic settings")) {
+                /* Original code
                 TextField("Project name", text: $title.onChange(update))
                 TextField("Description of this project", text: $detail.onChange(update))
+ */
+                TextField("Project name", text: $title)
+                TextField("Description of this project", text: $detail)
             }
             // sec 2
             Section(header: Text("Custom project color")) {
@@ -57,7 +61,10 @@ struct EditProjectView: View {
             }
         }
         .navigationTitle("Edit Project")
+        .onDisappear(perform: update)
+        /* Add this back when code bug gets fixed
         .onDisappear(perform: dataController.save)
+ */
         .alert(isPresented: $showingDeleteConfirm) {
             Alert(title: Text(
                     "Delete project?"), message: Text(
@@ -70,6 +77,10 @@ struct EditProjectView: View {
         project.title = title
         project.detail = detail
         project.color = color
+
+        // new addition to be removed after it works
+        dataController.save()
+        //
     }
 
     func delete() {
@@ -89,9 +100,12 @@ struct EditProjectView: View {
                     .font(.largeTitle)
             }
         }
+
         .onTapGesture {
             color = item
+            /*
             update()
+ */
         }
         .accessibilityElement(children: .ignore)
         .accessibilityAddTraits(
@@ -108,3 +122,10 @@ struct EditProjectView_Previews: PreviewProvider {
         EditProjectView(project: Project.example)
     }
 }
+/* The problem seem to be with update(). I found a work-a-round for time being is to
+
+ remove .onChange(update) from both TextFields
+ remove update() from .onTapGesture in colorButton
+ add dataController.save() to func update()
+ change .onDisappear to .onDisappear(perform: update)
+*/
