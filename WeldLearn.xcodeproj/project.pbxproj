@@ -46,6 +46,8 @@
 		05BFFAAE25BCB2B000F99E27 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFAAD25BCB2B000F99E27 /* ProjectTests.swift */; };
 		05BFFAB225BCBB9900F99E27 /* AwardTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFAB125BCBB9900F99E27 /* AwardTest.swift */; };
 		05CF1FEC25DF5655006CD337 /* WeldLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CF1FEB25DF5655006CD337 /* WeldLearnUITests.swift */; };
+		05F708C625F82CE700F4B0D3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F708C525F82CE700F4B0D3 /* HomeViewModel.swift */; };
+		05F708CB25F83AE500F4B0D3 /* ItemRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F708CA25F83AE500F4B0D3 /* ItemRowViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,8 @@
 		05CF1FE925DF5655006CD337 /* WeldLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeldLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CF1FEB25DF5655006CD337 /* WeldLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeldLearnUITests.swift; sourceTree = "<group>"; };
 		05CF1FED25DF5655006CD337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F708C525F82CE700F4B0D3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		05F708CA25F83AE500F4B0D3 /* ItemRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				0507A50E25E9D8FB007D383C /* ProjectsViewModel.swift */,
+				05F708C525F82CE700F4B0D3 /* HomeViewModel.swift */,
+				05F708CA25F83AE500F4B0D3 /* ItemRowViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -446,6 +452,7 @@
 				05BFFA0525AA0EDB00F99E27 /* ProjectHeaderView.swift in Sources */,
 				05BFFA1E25ABB4ED00F99E27 /* AwardsView.swift in Sources */,
 				05BFF9DB25A8C55F00F99E27 /* Main.xcdatamodeld in Sources */,
+				05F708C625F82CE700F4B0D3 /* HomeViewModel.swift in Sources */,
 				05BFF9DE25A8CA9B00F99E27 /* DataController.swift in Sources */,
 				05BFFA2125ABCB8700F99E27 /* Color-Additions.swift in Sources */,
 				05BFFA0B25AA63DE00F99E27 /* EditProjectView.swift in Sources */,
@@ -460,6 +467,7 @@
 				05BFFA3C25B1380C00F99E27 /* ItemListView.swift in Sources */,
 				05BFF9E725A9065400F99E27 /* HomeView.swift in Sources */,
 				05BFF9CA25A8C2B600F99E27 /* WeldLearnApp.swift in Sources */,
+				05F708CB25F83AE500F4B0D3 /* ItemRowViewModel.swift in Sources */,
 				05BFF9F025A9175E00F99E27 /* Item-CoreData-Helper.swift in Sources */,
 				0507A50F25E9D8FB007D383C /* ProjectsViewModel.swift in Sources */,
 				05BFF9F725A92CC300F99E27 /* EditItemView.swift in Sources */,
