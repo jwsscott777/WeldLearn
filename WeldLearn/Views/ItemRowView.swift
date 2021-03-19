@@ -11,7 +11,6 @@ struct ItemRowView: View {
     @StateObject var viewModel: ViewModel
     @ObservedObject var item: Item
 
-
     var body: some View {
         NavigationLink(destination: EditItemView(item: item)) {
             Label {
