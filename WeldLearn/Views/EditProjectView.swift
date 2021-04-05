@@ -6,6 +6,7 @@
 //
 import CoreHaptics
 import SwiftUI
+import UserNotifications
 
 struct EditProjectView: View {
     @ObservedObject var project: Project
@@ -16,7 +17,13 @@ struct EditProjectView: View {
     @State private var title: String
     @State private var detail: String
     @State private var color: String
+
     @State private var showingDeleteConfirm = false
+    @State private var showingNotificationsError = false
+
+    @State private var remindMe: Bool
+    @State private var reminderTime: Date
+
     @State private var engine = try? CHHapticEngine()
 
     let colorColumns = [
@@ -30,17 +37,27 @@ struct EditProjectView: View {
         _detail = State(wrappedValue: project.projectDetail)
         _color = State(wrappedValue: project.projectColor)
 
+        if let projectReminderTime = project.reminderTime {
+            _reminderTime = State(wrappedValue: projectReminderTime)
+            _remindMe = State(wrappedValue: true)
+        } else {
+            _reminderTime = State(wrappedValue: Date())
+            _remindMe = State(wrappedValue: false)
+        }
+
     }
     var body: some View {
         Form {
             // sec 1
             Section(header: Text("Basic settings")) {
-                /* Original code
-                TextField("Project name", text: $title.onChange(update))
-                TextField("Description of this project", text: $detail.onChange(update))
- */
+                /* Original code */
+               // TextField("Project name", text: $title.onChange(update))
+              //  TextField("Description of this project", text: $detail.onChange(update))
+
+                // Code to use if problem continues
                 TextField("Project name", text: $title)
                 TextField("Description of this project", text: $detail)
+
             }
             // sec 2
             Section(header: Text("Custom project color")) {
@@ -48,6 +65,26 @@ struct EditProjectView: View {
                     ForEach(Project.colors, id: \.self, content: colorButton)
                 }
                 .padding(.vertical)
+            }
+
+            Section(header: Text("Project reminders")) {
+                Toggle(
+                    "Show Reminders", isOn:
+                        $remindMe.animation())
+                    .alert(isPresented: $showingNotificationsError) {
+                        Alert(title: Text("Ughh"), message:
+                    Text(
+                    "Make sure notifications are enabled"),
+                    primaryButton: .default(Text(
+                    "Check Settings"), action: showAppSettings),
+                    secondaryButton: .cancel())
+                    }
+
+                if remindMe {
+                    DatePicker(
+                        "Reminder Time", selection: $reminderTime,
+                        displayedComponents: .hourAndMinute)
+                }
             }
             // sec 3
             Section(footer: Text("Closing a project moves it from the Open to Closed tab")) {
@@ -59,10 +96,12 @@ struct EditProjectView: View {
             }
         }
         .navigationTitle("Edit Project")
+        // This is used to fix
         .onDisappear(perform: update)
-        /* Add this back when code bug gets fixed
-        .onDisappear(perform: dataController.save)
- */
+
+        // Add this back when code bug gets fixed
+       // .onDisappear(perform: dataController.save)
+
         .alert(isPresented: $showingDeleteConfirm) {
             Alert(title: Text(
                     "Delete project?"), message: Text(
@@ -75,7 +114,7 @@ struct EditProjectView: View {
 
             project.closed.toggle()
             if project.closed {
-               // UINotificationFeedbackGenerator().notificationOccurred(.success)
+                UINotificationFeedbackGenerator().notificationOccurred(.success)
                 do {
                     try engine?.start()
                     let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: 0)
@@ -113,6 +152,20 @@ struct EditProjectView: View {
         project.detail = detail
         project.color = color
 
+        if remindMe {
+            project.reminderTime = reminderTime
+
+            dataController.addReminders(for: project) { success in
+                if success == false {
+                    project.reminderTime = nil
+                    remindMe = false
+                }
+            }
+        } else {
+            project.reminderTime = nil
+            dataController.removeReminders(for: project)
+        }
+
         // new addition to be removed after it works
         dataController.save()
         //
@@ -138,9 +191,8 @@ struct EditProjectView: View {
 
         .onTapGesture {
             color = item
-            /*
-            update()
- */
+
+           // update()
         }
         .accessibilityElement(children: .ignore)
         .accessibilityAddTraits(
@@ -149,6 +201,15 @@ struct EditProjectView: View {
                 : .isButton
         )
         .accessibilityLabel(LocalizedStringKey(item))
+    }
+
+    func showAppSettings() {
+        guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else {
+            return
+        }
+        if UIApplication.shared.canOpenURL(settingsURL) {
+            UIApplication.shared.open(settingsURL)
+        }
     }
 }
 

@@ -92,6 +92,14 @@
 "Dark Gray" = "Gris oscuro";
 "Gray" = "Gris";
 
+"Project reminders" = "Recordatorios de proyectos";
+"Show Reminders" = "Mostrar Recordatorios";
+"Ughh" = "Ughh";
+"Make sure notifications are enabled" = "Asegurate de que las notificaciones esten habilitadas";
+"Check Settings" = "Comprubar configuracion";
+"Reminder Time" = "Tiempo de Renderizado";
+
+
 
 /* EDITING ITEMS */
 "Edit Item" = "Editar artículo";

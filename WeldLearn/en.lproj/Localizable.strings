@@ -80,6 +80,13 @@
 "Dark Gray" = "Dark Gray";
 "Gray" = "Gray";
 
+"Project reminders" = "Project Reminders";
+"Show Reminders" = "Show Reminders";
+"Ughh" = "Ughh";
+"Make sure notifications are enabled" = "Make sure notifications are enabled";
+"Check Settings" = "Check Settings";
+"Reminder Time" = "Reminder Time";
+
 
 /* EDITING ITEMS */
 "Edit Item" = "Edit Item";
