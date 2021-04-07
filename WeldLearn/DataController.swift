@@ -17,9 +17,25 @@ class DataController: ObservableObject {
 /// The lone CloudKit container to store all data.
     let container: NSPersistentCloudKitContainer
 
+    /// The UserDefaults suite where we save user data
+    let defaults: UserDefaults
+
+    /// Loads and saves whether our premium unlock has been purchased
+    var fullVersionUnlocked: Bool {
+        get {
+            defaults.bool(forKey: "fullVersionUnlocked")
+        }
+
+        set {
+            defaults.set(newValue, forKey: "fullVersionUnlocked")
+        }
+    }
+
     /// Initializes a data controller, Defaults to permanent storage
     /// - Parameter inMemory: Whether to store temp or not.
-    init(inMemory: Bool = false) {
+    /// - Parameter defaults: The UserDefaults suite where user data should be stored.
+    init(inMemory: Bool = false, defaults: UserDefaults = .standard) {
+        self.defaults = defaults
         container = NSPersistentCloudKitContainer(name: "Main", managedObjectModel: Self.model)
 
         if inMemory {

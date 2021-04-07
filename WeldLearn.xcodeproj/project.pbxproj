@@ -46,6 +46,7 @@
 		05BFFAAE25BCB2B000F99E27 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFAAD25BCB2B000F99E27 /* ProjectTests.swift */; };
 		05BFFAB225BCBB9900F99E27 /* AwardTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFAB125BCBB9900F99E27 /* AwardTest.swift */; };
 		05CF1FEC25DF5655006CD337 /* WeldLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CF1FEB25DF5655006CD337 /* WeldLearnUITests.swift */; };
+		05ECF5E1261D1BE200650E32 /* UnlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ECF5E0261D1BE200650E32 /* UnlockManager.swift */; };
 		05F708C625F82CE700F4B0D3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F708C525F82CE700F4B0D3 /* HomeViewModel.swift */; };
 		05F708CB25F83AE500F4B0D3 /* ItemRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F708CA25F83AE500F4B0D3 /* ItemRowViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -117,6 +118,8 @@
 		05CF1FE925DF5655006CD337 /* WeldLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeldLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CF1FEB25DF5655006CD337 /* WeldLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeldLearnUITests.swift; sourceTree = "<group>"; };
 		05CF1FED25DF5655006CD337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05ECF5E0261D1BE200650E32 /* UnlockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockManager.swift; sourceTree = "<group>"; };
+		05ECF5E2261D20DF00650E32 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		05F708C525F82CE700F4B0D3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		05F708CA25F83AE500F4B0D3 /* ItemRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,6 +205,8 @@
 				05BFF9DD25A8CA9B00F99E27 /* DataController.swift */,
 				05BFFA2C25AE779600F99E27 /* Localizable.strings */,
 				05BFFA3125AE825500F99E27 /* Localizable.stringsdict */,
+				05ECF5E0261D1BE200650E32 /* UnlockManager.swift */,
+				05ECF5E2261D20DF00650E32 /* Configuration.storekit */,
 			);
 			path = WeldLearn;
 			sourceTree = "<group>";
@@ -453,6 +458,7 @@
 				05BFFA1E25ABB4ED00F99E27 /* AwardsView.swift in Sources */,
 				05BFF9DB25A8C55F00F99E27 /* Main.xcdatamodeld in Sources */,
 				05F708C625F82CE700F4B0D3 /* HomeViewModel.swift in Sources */,
+				05ECF5E1261D1BE200650E32 /* UnlockManager.swift in Sources */,
 				05BFF9DE25A8CA9B00F99E27 /* DataController.swift in Sources */,
 				05BFFA2125ABCB8700F99E27 /* Color-Additions.swift in Sources */,
 				05BFFA0B25AA63DE00F99E27 /* EditProjectView.swift in Sources */,

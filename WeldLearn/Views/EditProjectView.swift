@@ -192,7 +192,7 @@ struct EditProjectView: View {
         .onTapGesture {
             color = item
 
-           // update()
+          //  update()
         }
         .accessibilityElement(children: .ignore)
         .accessibilityAddTraits(
