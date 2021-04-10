@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0500A922262127110013E15B /* SKProduct-LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0500A921262127110013E15B /* SKProduct-LocalizedPrice.swift */; };
+		0500A924262128E80013E15B /* PurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0500A923262128E80013E15B /* PurchaseButton.swift */; };
+		0500A92626212B990013E15B /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0500A92526212B990013E15B /* ProductView.swift */; };
+		0500A92826212EE80013E15B /* UnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0500A92726212EE80013E15B /* UnlockView.swift */; };
 		0507A50F25E9D8FB007D383C /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0507A50E25E9D8FB007D383C /* ProjectsViewModel.swift */; };
 		0555D3BD25CA1DC000D423F7 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0555D3BC25CA1DC000D423F7 /* ExtensionTests.swift */; };
 		0555D3C425CA26E400D423F7 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 0555D3C325CA26E400D423F7 /* DecodableDictionary.json */; };
@@ -69,6 +73,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0500A921262127110013E15B /* SKProduct-LocalizedPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKProduct-LocalizedPrice.swift"; sourceTree = "<group>"; };
+		0500A923262128E80013E15B /* PurchaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseButton.swift; sourceTree = "<group>"; };
+		0500A92526212B990013E15B /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		0500A92726212EE80013E15B /* UnlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockView.swift; sourceTree = "<group>"; };
 		0507A50E25E9D8FB007D383C /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
 		0555D3BC25CA1DC000D423F7 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		0555D3C325CA26E400D423F7 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
@@ -150,6 +158,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0500A929262139170013E15B /* Unlock */ = {
+			isa = PBXGroup;
+			children = (
+				0500A92526212B990013E15B /* ProductView.swift */,
+				0500A923262128E80013E15B /* PurchaseButton.swift */,
+				0500A92726212EE80013E15B /* UnlockView.swift */,
+				05ECF5E0261D1BE200650E32 /* UnlockManager.swift */,
+			);
+			path = Unlock;
+			sourceTree = "<group>";
+		};
 		0507A50D25E9D8CD007D383C /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +212,7 @@
 		05BFF9C825A8C2B600F99E27 /* WeldLearn */ = {
 			isa = PBXGroup;
 			children = (
+				0500A929262139170013E15B /* Unlock */,
 				0507A50D25E9D8CD007D383C /* Models */,
 				05BFFA4325B2576A00F99E27 /* Configuration */,
 				05BFFA3725AE884B00F99E27 /* Awards.json */,
@@ -205,8 +225,6 @@
 				05BFF9DD25A8CA9B00F99E27 /* DataController.swift */,
 				05BFFA2C25AE779600F99E27 /* Localizable.strings */,
 				05BFFA3125AE825500F99E27 /* Localizable.stringsdict */,
-				05ECF5E0261D1BE200650E32 /* UnlockManager.swift */,
-				05ECF5E2261D20DF00650E32 /* Configuration.storekit */,
 			);
 			path = WeldLearn;
 			sourceTree = "<group>";
@@ -252,6 +270,7 @@
 				05BFF9F225A919A200F99E27 /* Project-CoreData-Helper.swift */,
 				05BFFA0125AA0CBA00F99E27 /* Binding-OnChange.swift */,
 				05BFFA0D25AA9ACB00F99E27 /* Sequence-Sorting.swift */,
+				0500A921262127110013E15B /* SKProduct-LocalizedPrice.swift */,
 				05BFFA1425ABAFF600F99E27 /* Bundle-Decodable.swift */,
 				05BFFA1A25ABB37700F99E27 /* Award.swift */,
 				05BFFA2025ABCB8700F99E27 /* Color-Additions.swift */,
@@ -263,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				05BFF9E025A904A300F99E27 /* WeldLearn.entitlements */,
+				05ECF5E2261D20DF00650E32 /* Configuration.storekit */,
 				05BFF9D925A8C55F00F99E27 /* Main.xcdatamodeld */,
 				05BFF9D225A8C2B800F99E27 /* Info.plist */,
 			);
@@ -454,7 +474,9 @@
 			files = (
 				05BFF9EA25A9078E00F99E27 /* ProjectsView.swift in Sources */,
 				05BFFA3F25B1399600F99E27 /* ProjectSummaryView.swift in Sources */,
+				0500A924262128E80013E15B /* PurchaseButton.swift in Sources */,
 				05BFFA0525AA0EDB00F99E27 /* ProjectHeaderView.swift in Sources */,
+				0500A92626212B990013E15B /* ProductView.swift in Sources */,
 				05BFFA1E25ABB4ED00F99E27 /* AwardsView.swift in Sources */,
 				05BFF9DB25A8C55F00F99E27 /* Main.xcdatamodeld in Sources */,
 				05F708C625F82CE700F4B0D3 /* HomeViewModel.swift in Sources */,
@@ -466,6 +488,7 @@
 				05BFFA1125AB5D4F00F99E27 /* SelectSomethingView.swift in Sources */,
 				05BFFA1B25ABB37700F99E27 /* Award.swift in Sources */,
 				05BFF9FA25A934E500F99E27 /* ItemRowView.swift in Sources */,
+				0500A92826212EE80013E15B /* UnlockView.swift in Sources */,
 				05BFF9F325A919A200F99E27 /* Project-CoreData-Helper.swift in Sources */,
 				05BFFA0225AA0CBA00F99E27 /* Binding-OnChange.swift in Sources */,
 				05BFFA0E25AA9ACB00F99E27 /* Sequence-Sorting.swift in Sources */,
@@ -475,6 +498,7 @@
 				05BFF9CA25A8C2B600F99E27 /* WeldLearnApp.swift in Sources */,
 				05F708CB25F83AE500F4B0D3 /* ItemRowViewModel.swift in Sources */,
 				05BFF9F025A9175E00F99E27 /* Item-CoreData-Helper.swift in Sources */,
+				0500A922262127110013E15B /* SKProduct-LocalizedPrice.swift in Sources */,
 				0507A50F25E9D8FB007D383C /* ProjectsViewModel.swift in Sources */,
 				05BFF9F725A92CC300F99E27 /* EditItemView.swift in Sources */,
 			);
