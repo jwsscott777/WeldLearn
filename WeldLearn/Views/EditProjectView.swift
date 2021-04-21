@@ -51,12 +51,12 @@ struct EditProjectView: View {
             // sec 1
             Section(header: Text("Basic settings")) {
                 /* Original code */
-               // TextField("Project name", text: $title.onChange(update))
-              //  TextField("Description of this project", text: $detail.onChange(update))
+                TextField("Project name", text: $title.onChange(update))
+                TextField("Description of this project", text: $detail.onChange(update))
 
                 // Code to use if problem continues
-                TextField("Project name", text: $title)
-                TextField("Description of this project", text: $detail)
+             //   TextField("Project name", text: $title)
+             //   TextField("Description of this project", text: $detail)
 
             }
             // sec 2
@@ -97,10 +97,10 @@ struct EditProjectView: View {
         }
         .navigationTitle("Edit Project")
         // This is used to fix
-        .onDisappear(perform: update)
+      //  .onDisappear(perform: update)
 
         // Add this back when code bug gets fixed
-       // .onDisappear(perform: dataController.save)
+        .onDisappear(perform: dataController.save)
 
         .alert(isPresented: $showingDeleteConfirm) {
             Alert(title: Text(
@@ -167,7 +167,7 @@ struct EditProjectView: View {
         }
 
         // new addition to be removed after it works
-        dataController.save()
+       // dataController.save()
         //
     }
 
@@ -192,7 +192,7 @@ struct EditProjectView: View {
         .onTapGesture {
             color = item
 
-          //  update()
+            update()
         }
         .accessibilityElement(children: .ignore)
         .accessibilityAddTraits(
