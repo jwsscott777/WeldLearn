@@ -11,6 +11,8 @@ struct ContentView: View {
     @SceneStorage("selectedView") var selectedView: String?
     @EnvironmentObject var dataController: DataController
 
+    private let newProjectActivity = "com.semajttocs.weldlearn.newProject"
+
     var body: some View {
         TabView(selection: $selectedView) {
             HomeView(dataController: dataController)
@@ -39,6 +41,11 @@ struct ContentView: View {
                 }
         }
         .onContinueUserActivity(CSSearchableItemActionType, perform: moveToHome)
+        .onContinueUserActivity(newProjectActivity, perform: createProject)
+        .userActivity(newProjectActivity) { activity in
+            activity.title = "New Project"
+            activity.isEligibleForPrediction = true
+        }
         .onOpenURL(perform: openURL)
     }
     func moveToHome(_ input: Any) {
@@ -46,6 +53,10 @@ struct ContentView: View {
     }
 
     func openURL(_ url: URL) {
+        selectedView = ProjectsView.openTag
+        dataController.addProject()
+    }
+    func createProject(_ userActivity: NSUserActivity) {
         selectedView = ProjectsView.openTag
         dataController.addProject()
     }
