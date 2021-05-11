@@ -51,6 +51,16 @@
 		05BFFA5725B2624500F99E27 /* AssetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFA5625B2624500F99E27 /* AssetTest.swift */; };
 		05BFFAAE25BCB2B000F99E27 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFAAD25BCB2B000F99E27 /* ProjectTests.swift */; };
 		05BFFAB225BCBB9900F99E27 /* AwardTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFAB125BCBB9900F99E27 /* AwardTest.swift */; };
+		05C38ADE264B2029004C01C7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C38ADD264B2029004C01C7 /* WidgetKit.framework */; };
+		05C38AE0264B2029004C01C7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C38ADF264B2029004C01C7 /* SwiftUI.framework */; };
+		05C38AE3264B2029004C01C7 /* WeldWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C38AE2264B2029004C01C7 /* WeldWidget.swift */; };
+		05C38AE5264B202B004C01C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C38AE4264B202B004C01C7 /* Assets.xcassets */; };
+		05C38AE9264B202B004C01C7 /* WeldWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 05C38ADC264B2029004C01C7 /* WeldWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		05C38AEE264B2136004C01C7 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9D925A8C55F00F99E27 /* Main.xcdatamodeld */; };
+		05C38AF0264B2179004C01C7 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9DD25A8CA9B00F99E27 /* DataController.swift */; };
+		05C38AF4264B235D004C01C7 /* DataController-Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C38AF3264B235D004C01C7 /* DataController-Reminders.swift */; };
+		05C38AF5264B24E8004C01C7 /* Item-CoreData-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9EF25A9175E00F99E27 /* Item-CoreData-Helper.swift */; };
+		05C38AF7264B2538004C01C7 /* DataController-Awards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C38AF6264B2538004C01C7 /* DataController-Awards.swift */; };
 		05CF1FEC25DF5655006CD337 /* WeldLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CF1FEB25DF5655006CD337 /* WeldLearnUITests.swift */; };
 		05ECF5E1261D1BE200650E32 /* UnlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ECF5E0261D1BE200650E32 /* UnlockManager.swift */; };
 		05F708C625F82CE700F4B0D3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F708C525F82CE700F4B0D3 /* HomeViewModel.swift */; };
@@ -65,6 +75,13 @@
 			remoteGlobalIDString = 05BFF9C525A8C2B600F99E27;
 			remoteInfo = WeldLearn;
 		};
+		05C38AE7264B202B004C01C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05BFF9BE25A8C2B600F99E27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05C38ADB264B2029004C01C7;
+			remoteInfo = WeldWidgetExtension;
+		};
 		05CF1FEE25DF5655006CD337 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 05BFF9BE25A8C2B600F99E27 /* Project object */;
@@ -73,6 +90,20 @@
 			remoteInfo = WeldLearn;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05C38AEA264B202B004C01C7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				05C38AE9264B202B004C01C7 /* WeldWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0500A921262127110013E15B /* SKProduct-LocalizedPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKProduct-LocalizedPrice.swift"; sourceTree = "<group>"; };
@@ -127,6 +158,15 @@
 		05BFFA5625B2624500F99E27 /* AssetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTest.swift; sourceTree = "<group>"; };
 		05BFFAAD25BCB2B000F99E27 /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
 		05BFFAB125BCBB9900F99E27 /* AwardTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardTest.swift; sourceTree = "<group>"; };
+		05C38ADC264B2029004C01C7 /* WeldWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WeldWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C38ADD264B2029004C01C7 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		05C38ADF264B2029004C01C7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		05C38AE2264B2029004C01C7 /* WeldWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeldWidget.swift; sourceTree = "<group>"; };
+		05C38AE4264B202B004C01C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05C38AE6264B202B004C01C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05C38AF3264B235D004C01C7 /* DataController-Reminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-Reminders.swift"; sourceTree = "<group>"; };
+		05C38AF6264B2538004C01C7 /* DataController-Awards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-Awards.swift"; sourceTree = "<group>"; };
+		05C38AF9264B2A64004C01C7 /* WeldWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeldWidgetExtension.entitlements; sourceTree = "<group>"; };
 		05CF1FE925DF5655006CD337 /* WeldLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeldLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CF1FEB25DF5655006CD337 /* WeldLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeldLearnUITests.swift; sourceTree = "<group>"; };
 		05CF1FED25DF5655006CD337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,6 +189,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05C38AD9264B2029004C01C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C38AE0264B2029004C01C7 /* SwiftUI.framework in Frameworks */,
+				05C38ADE264B2029004C01C7 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,9 +244,11 @@
 		05BFF9BD25A8C2B600F99E27 = {
 			isa = PBXGroup;
 			children = (
+				05C38AF9264B2A64004C01C7 /* WeldWidgetExtension.entitlements */,
 				05BFF9C825A8C2B600F99E27 /* WeldLearn */,
 				05BFFA4B25B25C8900F99E27 /* WeldLearnTests */,
 				05CF1FEA25DF5655006CD337 /* WeldLearnUITests */,
+				05C38AE1264B2029004C01C7 /* WeldWidget */,
 				05BFF9C725A8C2B600F99E27 /* Products */,
 				05BFF9E225A904DC00F99E27 /* Frameworks */,
 			);
@@ -209,6 +260,7 @@
 				05BFF9C625A8C2B600F99E27 /* WeldLearn.app */,
 				05BFFA4A25B25C8900F99E27 /* WeldLearnTests.xctest */,
 				05CF1FE925DF5655006CD337 /* WeldLearnUITests.xctest */,
+				05C38ADC264B2029004C01C7 /* WeldWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -231,6 +283,8 @@
 				05BFFA3125AE825500F99E27 /* Localizable.stringsdict */,
 				0500AA38262F82E80013E15B /* AppDelegate.swift */,
 				0500AA3A262F83170013E15B /* SceneDelegate.swift */,
+				05C38AF3264B235D004C01C7 /* DataController-Reminders.swift */,
+				05C38AF6264B2538004C01C7 /* DataController-Awards.swift */,
 			);
 			path = WeldLearn;
 			sourceTree = "<group>";
@@ -247,6 +301,8 @@
 			isa = PBXGroup;
 			children = (
 				05BFF9E325A904DC00F99E27 /* CloudKit.framework */,
+				05C38ADD264B2029004C01C7 /* WidgetKit.framework */,
+				05C38ADF264B2029004C01C7 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -311,6 +367,16 @@
 			path = WeldLearnTests;
 			sourceTree = "<group>";
 		};
+		05C38AE1264B2029004C01C7 /* WeldWidget */ = {
+			isa = PBXGroup;
+			children = (
+				05C38AE2264B2029004C01C7 /* WeldWidget.swift */,
+				05C38AE4264B202B004C01C7 /* Assets.xcassets */,
+				05C38AE6264B202B004C01C7 /* Info.plist */,
+			);
+			path = WeldWidget;
+			sourceTree = "<group>";
+		};
 		05CF1FEA25DF5655006CD337 /* WeldLearnUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,10 +397,12 @@
 				05BFF9C225A8C2B600F99E27 /* Sources */,
 				05BFF9C325A8C2B600F99E27 /* Frameworks */,
 				05BFF9C425A8C2B600F99E27 /* Resources */,
+				05C38AEA264B202B004C01C7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				05C38AE8264B202B004C01C7 /* PBXTargetDependency */,
 			);
 			name = WeldLearn;
 			productName = WeldLearn;
@@ -358,6 +426,23 @@
 			productName = WeldLearnTests;
 			productReference = 05BFFA4A25B25C8900F99E27 /* WeldLearnTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05C38ADB264B2029004C01C7 /* WeldWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05C38AED264B202B004C01C7 /* Build configuration list for PBXNativeTarget "WeldWidgetExtension" */;
+			buildPhases = (
+				05C38AD8264B2029004C01C7 /* Sources */,
+				05C38AD9264B2029004C01C7 /* Frameworks */,
+				05C38ADA264B2029004C01C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeldWidgetExtension;
+			productName = WeldWidgetExtension;
+			productReference = 05C38ADC264B2029004C01C7 /* WeldWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		05CF1FE825DF5655006CD337 /* WeldLearnUITests */ = {
 			isa = PBXNativeTarget;
@@ -383,7 +468,7 @@
 		05BFF9BE25A8C2B600F99E27 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					05BFF9C525A8C2B600F99E27 = {
@@ -392,6 +477,9 @@
 					05BFFA4925B25C8900F99E27 = {
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = 05BFF9C525A8C2B600F99E27;
+					};
+					05C38ADB264B2029004C01C7 = {
+						CreatedOnToolsVersion = 12.5;
 					};
 					05CF1FE825DF5655006CD337 = {
 						CreatedOnToolsVersion = 12.4;
@@ -416,6 +504,7 @@
 				05BFF9C525A8C2B600F99E27 /* WeldLearn */,
 				05BFFA4925B25C8900F99E27 /* WeldLearnTests */,
 				05CF1FE825DF5655006CD337 /* WeldLearnUITests */,
+				05C38ADB264B2029004C01C7 /* WeldWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -440,6 +529,14 @@
 			files = (
 				0555D3CA25CA277300D423F7 /* DecodableString.json in Resources */,
 				0555D3C425CA26E400D423F7 /* DecodableDictionary.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05C38ADA264B2029004C01C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C38AE5264B202B004C01C7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +578,7 @@
 				05BFF9EA25A9078E00F99E27 /* ProjectsView.swift in Sources */,
 				05BFFA3F25B1399600F99E27 /* ProjectSummaryView.swift in Sources */,
 				0500AA3B262F83170013E15B /* SceneDelegate.swift in Sources */,
+				05C38AF7264B2538004C01C7 /* DataController-Awards.swift in Sources */,
 				0500A924262128E80013E15B /* PurchaseButton.swift in Sources */,
 				05BFFA0525AA0EDB00F99E27 /* ProjectHeaderView.swift in Sources */,
 				0500A92626212B990013E15B /* ProductView.swift in Sources */,
@@ -491,6 +589,7 @@
 				05BFF9DE25A8CA9B00F99E27 /* DataController.swift in Sources */,
 				05BFFA2125ABCB8700F99E27 /* Color-Additions.swift in Sources */,
 				05BFFA0B25AA63DE00F99E27 /* EditProjectView.swift in Sources */,
+				05C38AF4264B235D004C01C7 /* DataController-Reminders.swift in Sources */,
 				05BFF9CC25A8C2B600F99E27 /* ContentView.swift in Sources */,
 				05BFFA1125AB5D4F00F99E27 /* SelectSomethingView.swift in Sources */,
 				05BFFA1B25ABB37700F99E27 /* Award.swift in Sources */,
@@ -526,6 +625,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05C38AD8264B2029004C01C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C38AEE264B2136004C01C7 /* Main.xcdatamodeld in Sources */,
+				05C38AF5264B24E8004C01C7 /* Item-CoreData-Helper.swift in Sources */,
+				05C38AF0264B2179004C01C7 /* DataController.swift in Sources */,
+				05C38AE3264B2029004C01C7 /* WeldWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		05CF1FE525DF5655006CD337 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -541,6 +651,11 @@
 			isa = PBXTargetDependency;
 			target = 05BFF9C525A8C2B600F99E27 /* WeldLearn */;
 			targetProxy = 05BFFA4F25B25C8900F99E27 /* PBXContainerItemProxy */;
+		};
+		05C38AE8264B202B004C01C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05C38ADB264B2029004C01C7 /* WeldWidgetExtension */;
+			targetProxy = 05C38AE7264B202B004C01C7 /* PBXContainerItemProxy */;
 		};
 		05CF1FEF25DF5655006CD337 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -701,6 +816,7 @@
 		05BFF9D625A8C2B800F99E27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WeldLearn/Configuration/WeldLearn.entitlements;
@@ -724,6 +840,7 @@
 		05BFF9D725A8C2B800F99E27 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WeldLearn/Configuration/WeldLearn.entitlements;
@@ -781,6 +898,52 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeldLearn.app/WeldLearn";
+			};
+			name = Release;
+		};
+		05C38AEB264B202B004C01C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WeldWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C7TWR6BW7;
+				INFOPLIST_FILE = WeldWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.semajttocs-icloud.WeldLearn.WeldWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05C38AEC264B202B004C01C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WeldWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C7TWR6BW7;
+				INFOPLIST_FILE = WeldWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.semajttocs-icloud.WeldLearn.WeldWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -850,6 +1013,15 @@
 			buildConfigurations = (
 				05BFFA5225B25C8900F99E27 /* Debug */,
 				05BFFA5325B25C8900F99E27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05C38AED264B202B004C01C7 /* Build configuration list for PBXNativeTarget "WeldWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C38AEB264B202B004C01C7 /* Debug */,
+				05C38AEC264B202B004C01C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
