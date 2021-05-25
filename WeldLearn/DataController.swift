@@ -7,7 +7,6 @@
 
 import CoreData
 import CoreSpotlight
-import StoreKit
 import SwiftUI
 import WidgetKit
 
@@ -162,16 +161,6 @@ class DataController: ObservableObject {
             return nil
         }
         return try? container.viewContext.existingObject(with: id) as? Item
-    }
-
-    func appLaunched() {
-        guard count(for: Project.fetchRequest()) >= 5 else { return }
-      //  let allScenes = UIApplication.shared.connectedScenes
-      //  let scene = allScenes.first { $0.activationState == .foregroundActive }
-
-      //  if let windowScene = scene as? UIWindowScene {
-        //    SKStoreReviewController.requestReview(in: windowScene)
-      // }
     }
 
     @discardableResult func addProject() -> Bool {

@@ -18,7 +18,14 @@
 		0555D3C425CA26E400D423F7 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 0555D3C325CA26E400D423F7 /* DecodableDictionary.json */; };
 		0555D3CA25CA277300D423F7 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = 0555D3C925CA277300D423F7 /* DecodableString.json */; };
 		057ECB9F25C2108C008ECEE9 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057ECB9E25C2108C008ECEE9 /* DevelopmentTests.swift */; };
+		05A8B545265B405900DAF955 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BFFA0725AA134000F99E27 /* Colors.xcassets */; };
+		05A8B546265B406E00DAF955 /* Project-CoreData-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9F225A919A200F99E27 /* Project-CoreData-Helper.swift */; };
+		05A8B547265B408F00DAF955 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFA0D25AA9ACB00F99E27 /* Sequence-Sorting.swift */; };
 		05AE095425D4B83700AEF374 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AE095325D4B83600AEF374 /* PerformanceTests.swift */; };
+		05B0ABEE265D957F0099D9FE /* DataController-Storekit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B0ABED265D957F0099D9FE /* DataController-Storekit.swift */; };
+		05B0ABF0265D980B0099D9FE /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B0ABEF265D980B0099D9FE /* DataProvider.swift */; };
+		05B0ABF2265D986D0099D9FE /* SimpleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B0ABF1265D986D0099D9FE /* SimpleWidget.swift */; };
+		05B0ABF4265D99160099D9FE /* ComplexWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B0ABF3265D99160099D9FE /* ComplexWidget.swift */; };
 		05BFF9CA25A8C2B600F99E27 /* WeldLearnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9C925A8C2B600F99E27 /* WeldLearnApp.swift */; };
 		05BFF9CC25A8C2B600F99E27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9CB25A8C2B600F99E27 /* ContentView.swift */; };
 		05BFF9CE25A8C2B800F99E27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BFF9CD25A8C2B800F99E27 /* Assets.xcassets */; };
@@ -118,6 +125,10 @@
 		0555D3C925CA277300D423F7 /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
 		057ECB9E25C2108C008ECEE9 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 		05AE095325D4B83600AEF374 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
+		05B0ABED265D957F0099D9FE /* DataController-Storekit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-Storekit.swift"; sourceTree = "<group>"; };
+		05B0ABEF265D980B0099D9FE /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		05B0ABF1265D986D0099D9FE /* SimpleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWidget.swift; sourceTree = "<group>"; };
+		05B0ABF3265D99160099D9FE /* ComplexWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexWidget.swift; sourceTree = "<group>"; };
 		05BFF9C625A8C2B600F99E27 /* WeldLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeldLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BFF9C925A8C2B600F99E27 /* WeldLearnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeldLearnApp.swift; sourceTree = "<group>"; };
 		05BFF9CB25A8C2B600F99E27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -285,6 +296,7 @@
 				0500AA3A262F83170013E15B /* SceneDelegate.swift */,
 				05C38AF3264B235D004C01C7 /* DataController-Reminders.swift */,
 				05C38AF6264B2538004C01C7 /* DataController-Awards.swift */,
+				05B0ABED265D957F0099D9FE /* DataController-Storekit.swift */,
 			);
 			path = WeldLearn;
 			sourceTree = "<group>";
@@ -373,6 +385,9 @@
 				05C38AE2264B2029004C01C7 /* WeldWidget.swift */,
 				05C38AE4264B202B004C01C7 /* Assets.xcassets */,
 				05C38AE6264B202B004C01C7 /* Info.plist */,
+				05B0ABEF265D980B0099D9FE /* DataProvider.swift */,
+				05B0ABF1265D986D0099D9FE /* SimpleWidget.swift */,
+				05B0ABF3265D99160099D9FE /* ComplexWidget.swift */,
 			);
 			path = WeldWidget;
 			sourceTree = "<group>";
@@ -537,6 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05C38AE5264B202B004C01C7 /* Assets.xcassets in Resources */,
+				05A8B545265B405900DAF955 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +611,7 @@
 				05BFFA1B25ABB37700F99E27 /* Award.swift in Sources */,
 				05BFF9FA25A934E500F99E27 /* ItemRowView.swift in Sources */,
 				0500A92826212EE80013E15B /* UnlockView.swift in Sources */,
+				05B0ABEE265D957F0099D9FE /* DataController-Storekit.swift in Sources */,
 				05BFF9F325A919A200F99E27 /* Project-CoreData-Helper.swift in Sources */,
 				0500AA39262F82E80013E15B /* AppDelegate.swift in Sources */,
 				05BFFA0225AA0CBA00F99E27 /* Binding-OnChange.swift in Sources */,
@@ -632,7 +649,12 @@
 				05C38AEE264B2136004C01C7 /* Main.xcdatamodeld in Sources */,
 				05C38AF5264B24E8004C01C7 /* Item-CoreData-Helper.swift in Sources */,
 				05C38AF0264B2179004C01C7 /* DataController.swift in Sources */,
+				05B0ABF2265D986D0099D9FE /* SimpleWidget.swift in Sources */,
+				05B0ABF4265D99160099D9FE /* ComplexWidget.swift in Sources */,
+				05B0ABF0265D980B0099D9FE /* DataProvider.swift in Sources */,
+				05A8B547265B408F00DAF955 /* Sequence-Sorting.swift in Sources */,
 				05C38AE3264B2029004C01C7 /* WeldWidget.swift in Sources */,
+				05A8B546265B406E00DAF955 /* Project-CoreData-Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
