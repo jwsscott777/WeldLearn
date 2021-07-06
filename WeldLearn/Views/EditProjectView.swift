@@ -4,6 +4,7 @@
 //
 //  Created by JWSScott777 on 1/9/21.
 //
+import CloudKit
 import CoreHaptics
 import SwiftUI
 import UserNotifications
@@ -96,6 +97,21 @@ struct EditProjectView: View {
             }
         }
         .navigationTitle("Edit Project")
+        .toolbar {
+            Button {
+                let records = project.prepareCloudRecords()
+                let operation = CKModifyRecordsOperation(recordsToSave: records, recordIDsToDelete: nil)
+                operation.savePolicy = .allKeys
+                operation.modifyRecordsCompletionBlock = { _, _, error in
+                    if let error = error {
+                        print("Error: \(error.localizedDescription)")
+                    }
+                }
+                CKContainer.default().publicCloudDatabase.add(operation)
+            } label: {
+                Label("Upload to iCloud", systemImage: "icloud.and.arrow.up")
+            }
+        }
         // This is used to fix
       //  .onDisappear(perform: update)
 
