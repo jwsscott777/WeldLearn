@@ -17,6 +17,11 @@
 		0555D3BD25CA1DC000D423F7 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0555D3BC25CA1DC000D423F7 /* ExtensionTests.swift */; };
 		0555D3C425CA26E400D423F7 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 0555D3C325CA26E400D423F7 /* DecodableDictionary.json */; };
 		0555D3CA25CA277300D423F7 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = 0555D3C925CA277300D423F7 /* DecodableString.json */; };
+		0558C92926A4F92E006B6586 /* SharedProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558C92826A4F92E006B6586 /* SharedProject.swift */; };
+		0558C92B26A4FA58006B6586 /* SharedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558C92A26A4FA58006B6586 /* SharedItem.swift */; };
+		0558C92D26A4FB7F006B6586 /* LoadStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558C92C26A4FB7F006B6586 /* LoadStates.swift */; };
+		0558C93026A4FCD1006B6586 /* SharedProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558C92F26A4FCD1006B6586 /* SharedProjectsView.swift */; };
+		0558C93226A51339006B6586 /* SharedItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558C93126A51339006B6586 /* SharedItemsView.swift */; };
 		057ECB9F25C2108C008ECEE9 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057ECB9E25C2108C008ECEE9 /* DevelopmentTests.swift */; };
 		05A8B545265B405900DAF955 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BFFA0725AA134000F99E27 /* Colors.xcassets */; };
 		05A8B546265B406E00DAF955 /* Project-CoreData-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9F225A919A200F99E27 /* Project-CoreData-Helper.swift */; };
@@ -123,6 +128,11 @@
 		0555D3BC25CA1DC000D423F7 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		0555D3C325CA26E400D423F7 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
 		0555D3C925CA277300D423F7 /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
+		0558C92826A4F92E006B6586 /* SharedProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedProject.swift; sourceTree = "<group>"; };
+		0558C92A26A4FA58006B6586 /* SharedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedItem.swift; sourceTree = "<group>"; };
+		0558C92C26A4FB7F006B6586 /* LoadStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadStates.swift; sourceTree = "<group>"; };
+		0558C92F26A4FCD1006B6586 /* SharedProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedProjectsView.swift; sourceTree = "<group>"; };
+		0558C93126A51339006B6586 /* SharedItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedItemsView.swift; sourceTree = "<group>"; };
 		057ECB9E25C2108C008ECEE9 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 		05AE095325D4B83600AEF374 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
 		05B0ABED265D957F0099D9FE /* DataController-Storekit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-Storekit.swift"; sourceTree = "<group>"; };
@@ -252,6 +262,18 @@
 			path = Fixtures;
 			sourceTree = "<group>";
 		};
+		0558C92E26A4FC13006B6586 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				0558C92826A4F92E006B6586 /* SharedProject.swift */,
+				0558C92A26A4FA58006B6586 /* SharedItem.swift */,
+				0558C92C26A4FB7F006B6586 /* LoadStates.swift */,
+				0558C92F26A4FCD1006B6586 /* SharedProjectsView.swift */,
+				0558C93126A51339006B6586 /* SharedItemsView.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
 		05BFF9BD25A8C2B600F99E27 = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +301,7 @@
 		05BFF9C825A8C2B600F99E27 /* WeldLearn */ = {
 			isa = PBXGroup;
 			children = (
+				0558C92E26A4FC13006B6586 /* Community */,
 				0500A929262139170013E15B /* Unlock */,
 				0507A50D25E9D8CD007D383C /* Models */,
 				05BFFA4325B2576A00F99E27 /* Configuration */,
@@ -596,8 +619,11 @@
 				0500AA3B262F83170013E15B /* SceneDelegate.swift in Sources */,
 				05C38AF7264B2538004C01C7 /* DataController-Awards.swift in Sources */,
 				0500A924262128E80013E15B /* PurchaseButton.swift in Sources */,
+				0558C92B26A4FA58006B6586 /* SharedItem.swift in Sources */,
 				05BFFA0525AA0EDB00F99E27 /* ProjectHeaderView.swift in Sources */,
 				0500A92626212B990013E15B /* ProductView.swift in Sources */,
+				0558C92D26A4FB7F006B6586 /* LoadStates.swift in Sources */,
+				0558C93026A4FCD1006B6586 /* SharedProjectsView.swift in Sources */,
 				05BFFA1E25ABB4ED00F99E27 /* AwardsView.swift in Sources */,
 				05BFF9DB25A8C55F00F99E27 /* Main.xcdatamodeld in Sources */,
 				05F708C625F82CE700F4B0D3 /* HomeViewModel.swift in Sources */,
@@ -606,7 +632,9 @@
 				05BFFA2125ABCB8700F99E27 /* Color-Additions.swift in Sources */,
 				05BFFA0B25AA63DE00F99E27 /* EditProjectView.swift in Sources */,
 				05C38AF4264B235D004C01C7 /* DataController-Reminders.swift in Sources */,
+				0558C92926A4F92E006B6586 /* SharedProject.swift in Sources */,
 				05BFF9CC25A8C2B600F99E27 /* ContentView.swift in Sources */,
+				0558C93226A51339006B6586 /* SharedItemsView.swift in Sources */,
 				05BFFA1125AB5D4F00F99E27 /* SelectSomethingView.swift in Sources */,
 				05BFFA1B25ABB37700F99E27 /* Award.swift in Sources */,
 				05BFF9FA25A934E500F99E27 /* ItemRowView.swift in Sources */,
