@@ -14,6 +14,7 @@
 		0500AA39262F82E80013E15B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0500AA38262F82E80013E15B /* AppDelegate.swift */; };
 		0500AA3B262F83170013E15B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0500AA3A262F83170013E15B /* SceneDelegate.swift */; };
 		0507A50F25E9D8FB007D383C /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0507A50E25E9D8FB007D383C /* ProjectsViewModel.swift */; };
+		0530DEE726A7AED600036B17 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0530DEE626A7AED600036B17 /* SignInView.swift */; };
 		0555D3BD25CA1DC000D423F7 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0555D3BC25CA1DC000D423F7 /* ExtensionTests.swift */; };
 		0555D3C425CA26E400D423F7 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 0555D3C325CA26E400D423F7 /* DecodableDictionary.json */; };
 		0555D3CA25CA277300D423F7 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = 0555D3C925CA277300D423F7 /* DecodableString.json */; };
@@ -74,6 +75,7 @@
 		05C38AF5264B24E8004C01C7 /* Item-CoreData-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9EF25A9175E00F99E27 /* Item-CoreData-Helper.swift */; };
 		05C38AF7264B2538004C01C7 /* DataController-Awards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C38AF6264B2538004C01C7 /* DataController-Awards.swift */; };
 		05CF1FEC25DF5655006CD337 /* WeldLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CF1FEB25DF5655006CD337 /* WeldLearnUITests.swift */; };
+		05D7CC3426B35596002A540F /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D7CC3326B35596002A540F /* ChatMessage.swift */; };
 		05ECF5E1261D1BE200650E32 /* UnlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ECF5E0261D1BE200650E32 /* UnlockManager.swift */; };
 		05F708C625F82CE700F4B0D3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F708C525F82CE700F4B0D3 /* HomeViewModel.swift */; };
 		05F708CB25F83AE500F4B0D3 /* ItemRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F708CA25F83AE500F4B0D3 /* ItemRowViewModel.swift */; };
@@ -125,6 +127,7 @@
 		0500AA38262F82E80013E15B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0500AA3A262F83170013E15B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0507A50E25E9D8FB007D383C /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
+		0530DEE626A7AED600036B17 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		0555D3BC25CA1DC000D423F7 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		0555D3C325CA26E400D423F7 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
 		0555D3C925CA277300D423F7 /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
@@ -191,6 +194,7 @@
 		05CF1FE925DF5655006CD337 /* WeldLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeldLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CF1FEB25DF5655006CD337 /* WeldLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeldLearnUITests.swift; sourceTree = "<group>"; };
 		05CF1FED25DF5655006CD337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05D7CC3326B35596002A540F /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		05ECF5E0261D1BE200650E32 /* UnlockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockManager.swift; sourceTree = "<group>"; };
 		05ECF5E2261D20DF00650E32 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		05F708C525F82CE700F4B0D3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -270,6 +274,7 @@
 				0558C92C26A4FB7F006B6586 /* LoadStates.swift */,
 				0558C92F26A4FCD1006B6586 /* SharedProjectsView.swift */,
 				0558C93126A51339006B6586 /* SharedItemsView.swift */,
+				05D7CC3326B35596002A540F /* ChatMessage.swift */,
 			);
 			path = Community;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 				05C38AF3264B235D004C01C7 /* DataController-Reminders.swift */,
 				05C38AF6264B2538004C01C7 /* DataController-Awards.swift */,
 				05B0ABED265D957F0099D9FE /* DataController-Storekit.swift */,
+				0530DEE626A7AED600036B17 /* SignInView.swift */,
 			);
 			path = WeldLearn;
 			sourceTree = "<group>";
@@ -628,6 +634,7 @@
 				05BFF9DB25A8C55F00F99E27 /* Main.xcdatamodeld in Sources */,
 				05F708C625F82CE700F4B0D3 /* HomeViewModel.swift in Sources */,
 				05ECF5E1261D1BE200650E32 /* UnlockManager.swift in Sources */,
+				0530DEE726A7AED600036B17 /* SignInView.swift in Sources */,
 				05BFF9DE25A8CA9B00F99E27 /* DataController.swift in Sources */,
 				05BFFA2125ABCB8700F99E27 /* Color-Additions.swift in Sources */,
 				05BFFA0B25AA63DE00F99E27 /* EditProjectView.swift in Sources */,
@@ -652,6 +659,7 @@
 				05BFF9F025A9175E00F99E27 /* Item-CoreData-Helper.swift in Sources */,
 				0500A922262127110013E15B /* SKProduct-LocalizedPrice.swift in Sources */,
 				0507A50F25E9D8FB007D383C /* ProjectsViewModel.swift in Sources */,
+				05D7CC3426B35596002A540F /* ChatMessage.swift in Sources */,
 				05BFF9F725A92CC300F99E27 /* EditItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

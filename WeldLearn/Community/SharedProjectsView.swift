@@ -15,20 +15,20 @@ struct SharedProjectsView: View {
 
     var body: some View {
         NavigationView {
-            Group {
-                 switch loadState {
-                  case .inactive, .loading:
-                      ProgressView()
-                  case .noResults:
-                      Text("No Results")
-                  case .success:
-                      List(projects) { project in
-                        NavigationLink(destination: SharedItemsView(project: project)) {
-                            VStack(alignment: .leading) {
-                                Text(project.title)
-                                    .font(.headline)
+        Group {
+        switch loadState {
+        case .inactive, .loading:
+             ProgressView()
+        case .noResults:
+             Text("No Results")
+        case .success:
+             List(projects) { project in
+                NavigationLink(destination: SharedItemsView(project: project)) {
+                    VStack(alignment: .leading) {
+                    Text(project.title)
+                        .font(.headline)
 
-                                    Text(project.owner)
+                    Text(project.owner)
                                 }
                             }
 

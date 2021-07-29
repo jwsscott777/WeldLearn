@@ -84,7 +84,7 @@
          </BuildableReference>
       </BuildableProductRunnable>
       <StoreKitConfigurationFileReference
-         identifier = "../../WeldLearn/Configuration.storekit">
+         identifier = "../../WeldLearn/Configuration/Configuration.storekit">
       </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction
