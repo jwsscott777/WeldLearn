@@ -10,6 +10,9 @@ import SwiftUI
 import UserNotifications
 
 struct EditProjectView: View {
+    enum CloudStatus {
+        case checking, exists, absent
+    }
     @ObservedObject var project: Project
 
     @EnvironmentObject var dataController: DataController
@@ -29,6 +32,8 @@ struct EditProjectView: View {
 
     @AppStorage("username") var username: String?
     @State private var showingSignIn = false
+
+    @State private var cloudStatus = CloudStatus.checking
 
     let colorColumns = [
         GridItem(.adaptive(minimum: 44))
@@ -101,14 +106,24 @@ struct EditProjectView: View {
         }
         .navigationTitle("Edit Project")
         .toolbar {
-            Button(action: uploadToCloud) {
-                Label("Upload to iCloud", systemImage: "icloud.and.arrow.up")
+            switch cloudStatus {
+            case .checking:
+                    ProgressView()
+            case .exists:
+                    Button(action: removeFromCloud) {
+                        Label("Remove from iCloud", systemImage: "icloud.slash")
+                    }
+            case .absent:
+                    Button(action: uploadToCloud) {
+                        Label("Upload to iCloud", systemImage: "icloud.and.arrow.up")
+                    }
             }
         }
         // This is used to fix
       //  .onDisappear(perform: update)
 
         // Add this back when code bug gets fixed
+        .onAppear(perform: updateCloudStatus)
         .onDisappear(perform: dataController.save)
 
         .alert(isPresented: $showingDeleteConfirm) {
@@ -232,12 +247,35 @@ struct EditProjectView: View {
                 if let error = error {
                     print("Error: \(error.localizedDescription)")
                 }
+                updateCloudStatus()
             }
+
+            cloudStatus = .checking
 
             CKContainer.default().publicCloudDatabase.add(operation)
         } else {
             showingSignIn = true
         }
+    }
+    func updateCloudStatus() {
+        project.checkCloudStatus { exists in
+            if exists {
+                cloudStatus = .exists
+            } else {
+                cloudStatus = .absent
+            }
+        }
+    }
+
+    func removeFromCloud() {
+        let name = project.objectID.uriRepresentation().absoluteString
+        let id = CKRecord.ID(recordName: name)
+        let operation = CKModifyRecordsOperation(recordsToSave: nil, recordIDsToDelete: [id])
+        operation.modifyRecordsCompletionBlock = { _, _, _ in
+            updateCloudStatus()
+        }
+        cloudStatus = .checking
+        CKContainer.default().publicCloudDatabase.add(operation)
     }
 }
 
