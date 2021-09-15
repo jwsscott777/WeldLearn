@@ -34,6 +34,7 @@ struct EditProjectView: View {
     @State private var showingSignIn = false
 
     @State private var cloudStatus = CloudStatus.checking
+    @State private var cloudError: CloudError?
 
     let colorColumns = [
         GridItem(.adaptive(minimum: 44))
@@ -131,6 +132,12 @@ struct EditProjectView: View {
                     "Delete project?"), message: Text(
                         "Are you sure?"), primaryButton: .default(Text(
                         "Delete"), action: delete), secondaryButton: .cancel())
+        }
+        .alert(item: $cloudError) { error in
+            Alert(
+                title: Text("There was an error"),
+                message: Text(error.message)
+            )
         }
         .sheet(isPresented: $showingSignIn, content: SignInView.init)
     }
@@ -245,7 +252,7 @@ struct EditProjectView: View {
 
             operation.modifyRecordsCompletionBlock = { _, _, error in
                 if let error = error {
-                    print("Error: \(error.localizedDescription)")
+                    cloudError = error.getCloudKitError()
                 }
                 updateCloudStatus()
             }
@@ -271,7 +278,10 @@ struct EditProjectView: View {
         let name = project.objectID.uriRepresentation().absoluteString
         let id = CKRecord.ID(recordName: name)
         let operation = CKModifyRecordsOperation(recordsToSave: nil, recordIDsToDelete: [id])
-        operation.modifyRecordsCompletionBlock = { _, _, _ in
+        operation.modifyRecordsCompletionBlock = { _, _, error in
+            if let error = error {
+                cloudError = error.getCloudKitError()
+            }
             updateCloudStatus()
         }
         cloudStatus = .checking
