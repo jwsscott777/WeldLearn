@@ -9,7 +9,11 @@
 
 "OK" = "OK";
 "Delete" = "Delete";
+"Cancel"= "Cancel";
 "Basic settings" = "Basic settings";
+
+/* A username and a message the user posted */
+"%@: %@" = "%@: %@";
 
 
 
@@ -18,6 +22,7 @@
 "Home" = "Home";
 "Open" = "Open";
 "Closed" = "Closed";
+"Community" = "Community";
 "Awards" = "Awards";
 
 
@@ -105,6 +110,26 @@
 
 "Locked" = "Locked";
 "Unlocked: %@" = "Unlocked: %@";
+
+/* COMMUNITY */
+
+"Shared Projects" = "Shared Projects";
+"Chat about this project…" = "Chat about this project…";
+"You're all set!" = "You're all set!";
+"Sorry, there was an error." = "Sorry, there was an error.";
+"Please sign in" = "Please sign in";
+"There was an error" = "There was an error";
+"Send" = "Send";
+"Enter your message" = "Enter your message";
+"Sign in to comment" = "Sign in to comment";
+"No results" = "No results";
+"In order to keep our community safe, we ask that you sign in before commenting on a project.\n\nWe don't track your personal information; your name is used for display purposes only.\n\nPlease note: we reserve the right to remove messages that are inappropriate or offensive." = "In order to keep our community safe, we ask that you sign in before commenting on a project.\n\nWe don't track your personal information; your name is used for display purposes only.\n\nPlease note: we reserve the right to remove messages that are inappropriate or offensive.";
+
+"There was a problem communicating with iCloud; please check your network connection and try again." = "There was a problem communicating with iCloud; please check your network connection and try again.";
+"There was a problem with your iCloud account; please check that you're logged in to iCloud." = "There was a problem with your iCloud account; please check that you're logged in to iCloud.";
+"You've hit iCloud's rate limit; please wait a moment then try again." = "You've hit iCloud's rate limit; please wait a moment then try again.";
+"You've exceeded your iCloud quota; please clear up some space then try again." = "You've exceeded your iCloud quota; please clear up some space then try again.";
+
 
 // Unlocking premium
 "Get Unlimited Projects" = "Get Unlimited Projects";

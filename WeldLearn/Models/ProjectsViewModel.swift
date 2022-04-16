@@ -18,6 +18,7 @@ extension ProjectsView {
         @Published var projects = [Project]()
 
         @Published var showingUnlockView = false
+        @Published var selectedItem: Item?
 
         init(dataController: DataController, showClosedProjects: Bool) {
             self.dataController = dataController
@@ -63,6 +64,11 @@ extension ProjectsView {
                 let item = allItems[offset]
                 dataController.delete(item)
             }
+            dataController.save()
+        }
+
+        func delete(_ item: Item) {
+            dataController.delete(item)
             dataController.save()
         }
         func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {

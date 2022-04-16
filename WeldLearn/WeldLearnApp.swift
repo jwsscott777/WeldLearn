@@ -9,7 +9,9 @@ import SwiftUI
 
 @main
 struct WeldLearnApp: App {
+    #if os(iOS)
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    #endif
     @StateObject var dataController: DataController
     @StateObject var unlockManager: UnlockManager
 
@@ -19,6 +21,10 @@ struct WeldLearnApp: App {
 
         _dataController = StateObject(wrappedValue: dataController)
         _unlockManager = StateObject(wrappedValue: unlockManager)
+
+        #if targetEnvironment(simulator)
+        UserDefaults.standard.set("semajttocs", forKey: "username")
+        #endif
     }
     var body: some Scene {
         WindowGroup {
@@ -28,7 +34,7 @@ struct WeldLearnApp: App {
                 .environmentObject(unlockManager)
                 .onReceive(
                     NotificationCenter.default.publisher(
-                        for: UIApplication.willResignActiveNotification), perform: save)
+                        for: .willResignActive), perform: save)
                 .onAppear(perform: dataController.appLaunched)
         }
     }

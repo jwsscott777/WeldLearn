@@ -10,7 +10,12 @@
 
 "OK" = "OK";
 "Delete" = "Eliminar";
+"Cancel" = "Cancelar";
 "Basic Settings" = "Ajustes básicos";
+
+/* A username and a message the user posted */
+"%@: %@" = "%@: %@";
+
 
 
 
@@ -19,6 +24,7 @@
 "Home" = "Hogar";
 "Open" = "Abierto";
 "Closed" = "Cerrado";
+"Community" = "Comunidad";
 "Awards" = "Premios";
 
 
@@ -119,6 +125,26 @@
 
 "Locked" = "Bloqueado";
 "Unlocked: %@" = "Desbloqueado: %@";
+
+/* COMMUNITY */
+
+"Shared Projects" = "Proyectos Compartidos";
+"Chat about this project…" = "Charla sobre este proyecto…";
+"You're all set!" = "ya estás listo!";
+"Sorry, there was an error." = "Lo sentimos, ha habido un error.";
+"Please sign in" = "Por favor, registrese";
+"There was an error" = "Hubo un error";
+"Send" = "Enviar";
+"Enter your message" = "Ingrese su mensaje";
+"Sign in to comment" = "Inicia sesión para comentar";
+"No results" = "No hay resultados";
+"In order to keep our community safe, we ask that you sign in before commenting on a project.\n\nWe don't track your personal information; your name is used for display purposes only.\n\nPlease note: we reserve the right to remove messages that are inappropriate or offensive." = "In order to keep our community safe, we ask that you sign in before commenting on a project.\n\nWe don't track your personal information; your name is used for display purposes only.\n\nPlease note: we reserve the right to remove messages that are inappropriate or offensive.";
+
+"There was a problem communicating with iCloud; please check your network connection and try again." = "Hubo un problema al comunicarse con iCloud; por favor verifique su conexión de red y vuelva a intentarlo.";
+"There was a problem with your iCloud account; please check that you're logged in to iCloud." = "Hubo un problema con su cuenta de iCloud; comprueba que has iniciado sesión en iCloud.";
+"You've hit iCloud's rate limit; please wait a moment then try again." = "Has alcanzado el límite de velocidad de iCloud; por favor espere un momento y vuelva a intentarlo.";
+"You've exceeded your iCloud quota; please clear up some space then try again." = "Has excedido tu cuota de iCloud; despeja un poco de espacio y vuelve a intentarlo.";
+
 
 // Unlocking premium
 "Get Unlimited Projects" = "Obtenga proyectos ilimitados";

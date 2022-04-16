@@ -11,13 +11,20 @@ struct ProjectsView: View {
     static let openTag: String? = "Open"
     static let closedTag: String? = "Closed"
     @StateObject var viewModel: ViewModel
-    @State private var showingSortOrder = false
+
+
     var projectsList: some View {
-        List {
+        List(selection: $viewModel.selectedItem) {
             ForEach(viewModel.projects) { project in
                 Section(header: ProjectHeaderView(project: project)) {
                     ForEach(project.projectItems(using: viewModel.sortOrder)) { item in
-                        ItemRowView(project: project, item: item)
+                        ItemRowView( project: project, item: item)
+                            .contextMenu {
+                                Button("Delete", role: .destructive) {
+                                    viewModel.delete(item)
+                                }
+                            }
+                            .tag(item)
                     }
                     .onDelete { offsets in
                         viewModel.delete(offsets, from: project)
@@ -28,41 +35,49 @@ struct ProjectsView: View {
                             viewModel.addItem(to: project)
                             }
                         } label: {
-                            Label("Add New Item", systemImage: "plus")
+                           // Label("Add New Item", systemImage: "plus")
+                            HStack {
+                                Image(systemName: "plus")
+                                    .foregroundColor(.secondary)
+                                Text("Add New Item")
+                            }
                         }
+                        .buttonStyle(.borderless)
                     }
                 }
+                .disableCollapsing()
             }
         }
         .listStyle(InsetGroupedListStyle())
+        .onDeleteCommand {
+            guard let selectedItem = viewModel.selectedItem else { return }
+            viewModel.delete(selectedItem)
+        }
     }
 
     var addProjectToolbarItem: some ToolbarContent {
-        ToolbarItem(placement: .navigationBarTrailing) {
+        ToolbarItem(placement: .primaryAction) {
             if viewModel.showClosedProjects == false {
                 Button {
                     withAnimation {
                         viewModel.addProject()
                     }
                 } label: {
-                // In ios 14.3 Voiceover has a glitch that reads
-                // "Add Project" as "Add" no matter what we try
-                // so we use a text view to force a correct reading
-                if UIAccessibility.isVoiceOverRunning {
-                    Text("Add Project")
-                } else {
+
                     Label("Add Project", systemImage: "plus")
                 }
 
             }
         }
         }
-    }
+    
 
     var sortOrderToolbarItem: some ToolbarContent {
-        ToolbarItem(placement: .navigationBarLeading) {
-            Button {
-                showingSortOrder.toggle()
+        ToolbarItem(placement: .cancellationAction) {
+            Menu {
+                Button("Optimized") { viewModel.sortOrder = .optimized }
+                Button("Creation Date") { viewModel.sortOrder = .creationDate }
+                Button("Title") { viewModel.sortOrder = .title }
             } label: {
 
                 Label("Sort", systemImage: "arrow.up.arrow.down")
@@ -86,13 +101,7 @@ struct ProjectsView: View {
                 addProjectToolbarItem
                 sortOrderToolbarItem
             }
-            .actionSheet(isPresented: $showingSortOrder) {
-                ActionSheet(title: Text("Sort items"), message: nil, buttons: [
-                    .default(Text("Optimized")) { viewModel.sortOrder = .optimized },
-                    .default(Text("Creation Date")) { viewModel.sortOrder = .creationDate },
-                    .default(Text("Title")) { viewModel.sortOrder = .title }
-                ])
-            }
+
             SelectSomethingView()
         }
         .sheet(isPresented: $viewModel.showingUnlockView) {

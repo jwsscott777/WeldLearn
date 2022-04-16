@@ -6,6 +6,7 @@
 //
 import CloudKit
 import CoreHaptics
+import CoreData
 import SwiftUI
 import UserNotifications
 
@@ -29,6 +30,7 @@ struct EditProjectView: View {
     @State private var reminderTime: Date
 
     @State private var engine = try? CHHapticEngine()
+
 
     @AppStorage("username") var username: String?
     @State private var showingSignIn = false
@@ -81,13 +83,14 @@ struct EditProjectView: View {
                 Toggle(
                     "Show Reminders", isOn:
                         $remindMe.animation())
-                    .alert(isPresented: $showingNotificationsError) {
-                        Alert(title: Text("Ughh"), message:
-                    Text(
-                    "Make sure notifications are enabled"),
-                    primaryButton: .default(Text(
-                    "Check Settings"), action: showAppSettings),
-                    secondaryButton: .cancel())
+                    .alert("Ughh", isPresented: $showingNotificationsError) {
+                        #if os(iOS)
+                        Button("Check Settings", action: showAppSettings)
+                        #endif
+                        Button("OK") { }
+                    } message: {
+                        Text(
+                        "Make sure notifications are enabled")
                     }
 
                 if remindMe {
@@ -103,6 +106,12 @@ struct EditProjectView: View {
                     showingDeleteConfirm.toggle()
                 }
                 .accentColor(.red)
+                .alert(isPresented: $showingDeleteConfirm) {
+                    Alert(title: Text(
+                            "Delete project?"), message: Text(
+                                "Are you sure?"), primaryButton: .default(Text(
+                                "Delete"), action: delete), secondaryButton: .cancel())
+                }
             }
         }
         .navigationTitle("Edit Project")
@@ -111,7 +120,9 @@ struct EditProjectView: View {
             case .checking:
                     ProgressView()
             case .exists:
-                    Button(action: removeFromCloud) {
+                    Button {
+                        removeFromCloud(deleteLocal: false)
+                    } label: {
                         Label("Remove from iCloud", systemImage: "icloud.slash")
                     }
             case .absent:
@@ -126,27 +137,22 @@ struct EditProjectView: View {
         // Add this back when code bug gets fixed
         .onAppear(perform: updateCloudStatus)
         .onDisappear(perform: dataController.save)
-
-        .alert(isPresented: $showingDeleteConfirm) {
-            Alert(title: Text(
-                    "Delete project?"), message: Text(
-                        "Are you sure?"), primaryButton: .default(Text(
-                        "Delete"), action: delete), secondaryButton: .cancel())
-        }
         .alert(item: $cloudError) { error in
             Alert(
                 title: Text("There was an error"),
-                message: Text(error.message)
+                message: Text(error.localizedMessage)
             )
         }
         .sheet(isPresented: $showingSignIn, content: SignInView.init)
     }
 
-    func toggleClosed() {
 
+    func toggleClosed() {
             project.closed.toggle()
             if project.closed {
+                #if os(iOS)
                 UINotificationFeedbackGenerator().notificationOccurred(.success)
+                #endif
                 do {
                     try engine?.start()
                     let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: 0)
@@ -179,6 +185,7 @@ struct EditProjectView: View {
         }
     }
 
+
     func update() {
         project.title = title
         project.detail = detail
@@ -204,8 +211,12 @@ struct EditProjectView: View {
     }
 
     func delete() {
+        if cloudStatus == .exists {
+            removeFromCloud(deleteLocal: true)
+        } else {
         dataController.delete(project)
         presentationMode.wrappedValue.dismiss()
+        }
     }
 
     func colorButton(for item: String) -> some View {
@@ -235,6 +246,7 @@ struct EditProjectView: View {
         .accessibilityLabel(LocalizedStringKey(item))
     }
 
+    #if os(iOS)
     func showAppSettings() {
         guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else {
             return
@@ -243,6 +255,7 @@ struct EditProjectView: View {
             UIApplication.shared.open(settingsURL)
         }
     }
+    #endif
 
     func uploadToCloud() {
         if let username = username {
@@ -274,13 +287,18 @@ struct EditProjectView: View {
         }
     }
 
-    func removeFromCloud() {
+    func removeFromCloud(deleteLocal: Bool) {
         let name = project.objectID.uriRepresentation().absoluteString
         let id = CKRecord.ID(recordName: name)
         let operation = CKModifyRecordsOperation(recordsToSave: nil, recordIDsToDelete: [id])
         operation.modifyRecordsCompletionBlock = { _, _, error in
             if let error = error {
                 cloudError = error.getCloudKitError()
+            } else {
+                if deleteLocal {
+                    dataController.delete(project)
+                    presentationMode.wrappedValue.dismiss()
+                }
             }
             updateCloudStatus()
         }
