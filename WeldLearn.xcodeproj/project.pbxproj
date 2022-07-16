@@ -21,7 +21,6 @@
 		0508A00B27CC1D230080F8B3 /* DataController-Awards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C38AF6264B2538004C01C7 /* DataController-Awards.swift */; };
 		0508A00C27CC1D230080F8B3 /* DataController-Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C38AF3264B235D004C01C7 /* DataController-Reminders.swift */; };
 		0508A00E27CC1D230080F8B3 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9DD25A8CA9B00F99E27 /* DataController.swift */; };
-		0508A00F27CC1D560080F8B3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFF9E625A9065400F99E27 /* HomeView.swift */; };
 		0508A01027CC1D650080F8B3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F708C525F82CE700F4B0D3 /* HomeViewModel.swift */; };
 		0508A01127CC1D9E0080F8B3 /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFA3E25B1399600F99E27 /* ProjectSummaryView.swift */; };
 		0508A01227CC1DAD0080F8B3 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BFFA3B25B1380C00F99E27 /* ItemListView.swift */; };
@@ -69,6 +68,7 @@
 		0530DEE726A7AED600036B17 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0530DEE626A7AED600036B17 /* SignInView.swift */; };
 		0531DAD526F1683100A1DDF7 /* Error-CloudKitMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531DAD426F1683100A1DDF7 /* Error-CloudKitMessages.swift */; };
 		0531DAD726F16FEC00A1DDF7 /* CloudError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531DAD626F16FEC00A1DDF7 /* CloudError.swift */; };
+		0545E99A2882429C00F62E12 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0545E9992882429C00F62E12 /* HomeView.swift */; };
 		0555D3BD25CA1DC000D423F7 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0555D3BC25CA1DC000D423F7 /* ExtensionTests.swift */; };
 		0555D3C425CA26E400D423F7 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 0555D3C325CA26E400D423F7 /* DecodableDictionary.json */; };
 		0555D3CA25CA277300D423F7 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = 0555D3C925CA277300D423F7 /* DecodableString.json */; };
@@ -192,6 +192,7 @@
 		0530DEE626A7AED600036B17 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		0531DAD426F1683100A1DDF7 /* Error-CloudKitMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error-CloudKitMessages.swift"; sourceTree = "<group>"; };
 		0531DAD626F16FEC00A1DDF7 /* CloudError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudError.swift; sourceTree = "<group>"; };
+		0545E9992882429C00F62E12 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0555D3BC25CA1DC000D423F7 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		0555D3C325CA26E400D423F7 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
 		0555D3C925CA277300D423F7 /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
@@ -337,6 +338,7 @@
 				0508A00127CC196B0080F8B3 /* Preview Content */,
 				0508A03727CC210D0080F8B3 /* PlatformAdjustment.swift */,
 				0508A03B27CC23CC0080F8B3 /* Color-Additions.swift */,
+				0545E9992882429C00F62E12 /* HomeView.swift */,
 			);
 			path = WeldLearnMac;
 			sourceTree = "<group>";
@@ -770,6 +772,7 @@
 				0508A01D27CC1E6A0080F8B3 /* AwardsView.swift in Sources */,
 				0508A02827CC1F8E0080F8B3 /* Item-CoreData-Helper.swift in Sources */,
 				0508A02A27CC1FA10080F8B3 /* SKProduct-LocalizedPrice.swift in Sources */,
+				0545E99A2882429C00F62E12 /* HomeView.swift in Sources */,
 				0508A02427CC1F6E0080F8B3 /* Error-CloudKitMessages.swift in Sources */,
 				0508A03327CC20550080F8B3 /* ProductView.swift in Sources */,
 				0508A03227CC20380080F8B3 /* SignInView.swift in Sources */,
@@ -780,7 +783,6 @@
 				0508A01227CC1DAD0080F8B3 /* ItemListView.swift in Sources */,
 				0508A02927CC1F980080F8B3 /* Project-CoreData-Helper.swift in Sources */,
 				0508A00C27CC1D230080F8B3 /* DataController-Reminders.swift in Sources */,
-				0508A00F27CC1D560080F8B3 /* HomeView.swift in Sources */,
 				0508A01E27CC1E8B0080F8B3 /* Main.xcdatamodeld in Sources */,
 				0508A00A27CC1CE70080F8B3 /* WeldLearnApp.swift in Sources */,
 				0508A02327CC1F660080F8B3 /* Bundle-Decodable.swift in Sources */,
